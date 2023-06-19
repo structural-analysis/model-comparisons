@@ -1,20 +1,6 @@
 
 
- SAP2000 v24.1.0 Ultimate 64-bit (Analysis Build 9917/64)                       
- File: H:\Doctora\Thesis\resul...els\2story-1span - span 5 - 24\2story-1span.OUT
+ SAP2000 v24.2.0 Ultimate 64-bit (Analysis Build 9931/64)                       
+ File: C:\Users\Hamed\projects...-dynamic-inelastic\2story-dynamic-inelastic.OUT
                                                                      
                                                                        
-
- D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
-
-         (A) = Active DOF, equilibrium equation
-         (-) = Restrained DOF, reaction computed
-         (+) = Constrained DOF
-         (>) = External substructure DOF
-         ( ) = Null DOF
-
-  JOINTS              UX  UY  UZ  RX  RY  RZ
-       0               -   -   -   -   -   -
-       1 TO       2    A       A       A    
-       5               -   -   -   -   -   -
-       6 TO       4    A       A       A    
