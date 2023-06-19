@@ -1,0 +1,215 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-1.5, 0.0), point2=(
+    1.5, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='beam-left', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['beam-left'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-1.0, 0.0), point2=(
+    1.0, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='beam-right', 
+    type=DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['beam-right'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0, 1.5), point2=(
+    0.0, -1.5))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='column', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['column'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+del mdb.models['Model-1'].parts['column']
+# Save by Hamed on 2023_03_09-13.37.01; build 6.14-1 2014_06_05-02.41.02 134264
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+del mdb.models['Model-1'].parts['beam-right']
+del mdb.models['Model-1'].parts['beam-left']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-1.5, 0.0), point2=(
+    1.5, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='beam', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['beam'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].Material(name='steel')
+mdb.models['Model-1'].materials['steel'].Density(table=((0.0, ), ))
+mdb.models['Model-1'].materials['steel'].Elastic(table=((200000000000.0, 0.3), 
+    ))
+mdb.models['Model-1'].Calibration(name='Calibration-1')
+mdb.models['Model-1'].calibrations['Calibration-1'].Behavior(name='Behavior-1', 
+    typeName='ElasIsoBehavior')
+del mdb.models['Model-1'].calibrations['Calibration-1'].behaviors['Behavior-1']
+del mdb.models['Model-1'].calibrations['Calibration-1']
+mdb.models['Model-1'].RectangularProfile(a=0.02, b=0.08, name='beam-profile')
+mdb.models['Model-1'].BeamSection(consistentMassMatrix=False, integration=
+    DURING_ANALYSIS, material='steel', name='beam-section', poissonRatio=0.0, 
+    profile='beam-profile', temperatureVar=LINEAR)
+mdb.models['Model-1'].parts['beam'].SectionAssignment(offset=0.0, offsetField=
+    '', offsetType=MIDDLE_SURFACE, region=Region(
+    edges=mdb.models['Model-1'].parts['beam'].edges.getSequenceFromMask(mask=(
+    '[#1 ]', ), )), sectionName='beam-section', thicknessAssignment=
+    FROM_SECTION)
+mdb.models['Model-1'].parts['beam'].MaterialOrientation(additionalRotationType=
+    ROTATION_NONE, axis=AXIS_3, fieldName='', localCsys=None, orientationType=
+    GLOBAL, region=Region(
+    edges=mdb.models['Model-1'].parts['beam'].edges.getSequenceFromMask(mask=(
+    '[#1 ]', ), )), stackDirection=STACK_3)
+mdb.models['Model-1'].parts['beam'].engineeringFeatures.NonstructuralMass(
+    distribution=MASS_PROPORTIONAL, magnitude=3333.33, name='beam-inertia', 
+    region=Region(
+    edges=mdb.models['Model-1'].parts['beam'].edges.getSequenceFromMask(mask=(
+    '[#1 ]', ), )), units=MASS_PER_LENGTH)
+mdb.models['Model-1'].parts['beam'].DatumPlaneByPrincipalPlane(offset=2.0, 
+    principalPlane=YZPLANE)
+del mdb.models['Model-1'].parts['beam'].features['Datum plane-1']
+mdb.models['Model-1'].parts['beam'].DatumAxisByPrincipalAxis(principalAxis=
+    YAXIS)
+del mdb.models['Model-1'].parts['beam'].features['Datum axis-1']
+mdb.models['Model-1'].parts['beam'].DatumPointByCoordinate(coords=(2.0, 0.0, 
+    0.0))
+mdb.models['Model-1'].parts['beam'].features['Datum pt-1'].setValues(xValue=
+    0.5)
+mdb.models['Model-1'].parts['beam'].regenerate()
+mdb.models['Model-1'].parts['beam'].regenerate()
+mdb.models['Model-1'].parts['beam'].PartitionEdgeByPoint(edge=
+    mdb.models['Model-1'].parts['beam'].edges[0], point=
+    mdb.models['Model-1'].parts['beam'].datums[7])
+mdb.models['Model-1'].parts['beam'].Set(name='load-point', vertices=
+    mdb.models['Model-1'].parts['beam'].vertices.getSequenceFromMask(('[#2 ]', 
+    ), ))
+mdb.models['Model-1'].parts['beam'].Set(name='left-point', vertices=
+    mdb.models['Model-1'].parts['beam'].vertices.getSequenceFromMask(('[#1 ]', 
+    ), ))
+mdb.models['Model-1'].parts['beam'].Set(name='right-point', vertices=
+    mdb.models['Model-1'].parts['beam'].vertices.getSequenceFromMask(('[#4 ]', 
+    ), ))
+mdb.models['Model-1'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['Model-1'].rootAssembly.Instance(dependent=OFF, name='beam-1', part=
+    mdb.models['Model-1'].parts['beam'])
+mdb.models['Model-1'].ImplicitDynamicsStep(name='dynamic-loading', previous=
+    'Initial')
+mdb.models['Model-1'].fieldOutputRequests['F-Output-1'].setValues(frequency=1, 
+    variables=('U', 'RF', 'CF', 'NFORC', 'NFORCSO'))
+mdb.models['Model-1'].TabularAmplitude(data=((0.0, 0.0), (0.02, 79314.36188), (
+    0.04, 150864.8814), (0.06, 257814.3619), (0.08, 244104.5059), (0.1, 
+    303333.3333), (0.12, 297771.1725), (0.14, 257814.3619), (0.16, 
+    280364.8814), (0.18, 234481.0286), (0.2, 221666.6667), (0.22, 216066.6667), 
+    (0.24, 146416.6667), (0.26, 59481.02857), (0.28, 364.8814166), (0.3, 0.0), 
+    (0.32, -105271.1725), (0.34, -52500.0), (0.36, -116666.6667), (0.38, 
+    -158647.65), (0.4, -93333.33335), (0.42, -185384.185), (0.44, 
+    -221666.6667), (0.46, -198333.3333), (0.48, -140000.0), (0.5, -210000.0), (
+    0.52, -128333.3333), (0.54, -105000.0), (0.56, -81666.66666), (0.58, 
+    -23333.33333), (0.6, 11666.66667), (0.62, 52500.0), (0.64, 0.0), (0.66, 
+    -79314.36188), (0.68, -150864.8814), (0.7, -207647.6953), (0.72, 
+    -220771.1725), (0.74, -116666.6667), (0.76, -220771.1725), (0.78, 
+    -207647.6953), (0.8, -150864.8814), (0.82, -79314.36188), (0.84, 0.0), (
+    0.86, 79314.36188), (0.88, 150864.8814), (0.9, 207647.6953), (0.92, 
+    244104.5059), (0.94, 256666.6667), (0.96, 244104.5059), (0.98, 
+    207647.6953), (1.0, 150864.8814)), name='load-history', smooth=
+    SOLVER_DEFAULT, timeSpan=STEP)
+mdb.models['Model-1'].ConcentratedForce(amplitude='load-history', cf2=-1.0, 
+    createStepName='dynamic-loading', distributionType=UNIFORM, field='', 
+    localCsys=None, name='point-load', region=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['beam-1'].vertices.getSequenceFromMask(
+    mask=('[#2 ]', ), )))
+mdb.models['Model-1'].EncastreBC(createStepName='dynamic-loading', localCsys=
+    None, name='rigid', region=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['beam-1'].vertices.getSequenceFromMask(
+    mask=('[#5 ]', ), )))
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='dynamic-1', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.models['Model-1'].parts['beam'].assignBeamSectionOrientation(method=
+    N1_COSINES, n1=(0.0, 0.0, -1.0), region=Region(
+    edges=mdb.models['Model-1'].parts['beam'].edges.getSequenceFromMask(mask=(
+    '[#3 ]', ), )))
+del mdb.models['Model-1'].parts['beam'].materialOrientations[0]
+mdb.models['Model-1'].parts['beam'].assignBeamSectionOrientation(method=
+    N1_COSINES, n1=(0.0, 0.0, -1.0), region=Region(
+    edges=mdb.models['Model-1'].parts['beam'].edges.getSequenceFromMask(mask=(
+    '[#3 ]', ), )))
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].rootAssembly.seedPartInstance(deviationFactor=0.1, 
+    minSizeFactor=0.1, regions=(
+    mdb.models['Model-1'].rootAssembly.instances['beam-1'], ), size=0.2)
+mdb.models['Model-1'].rootAssembly.seedPartInstance(deviationFactor=0.1, 
+    minSizeFactor=0.1, regions=(
+    mdb.models['Model-1'].rootAssembly.instances['beam-1'], ), size=2.0)
+mdb.models['Model-1'].rootAssembly.setElementType(elemTypes=(ElemType(
+    elemCode=B22, elemLibrary=STANDARD), ), regions=(
+    mdb.models['Model-1'].rootAssembly.instances['beam-1'].edges.getSequenceFromMask(
+    ('[#3 ]', ), ), ))
+mdb.models['Model-1'].rootAssembly.generateMesh(regions=(
+    mdb.models['Model-1'].rootAssembly.instances['beam-1'], ))
+mdb.jobs['dynamic-1'].submit(consistencyChecking=OFF)
+mdb.jobs['dynamic-1']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'DESKTOP-F028AA0', 'handle': 0, 'jobName': 'dynamic-1'})
+mdb.jobs['dynamic-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'THE NONSTRUCTURAL MASS IS NOT ALLOWED WITH ELSET ASSEMBLY_BEAM-1__PICKEDSET4 IN Abaqus/Standard AS SOME OF THE ELEMENTS HAVE A NON-POSITIVE STRUCTURAL MASS. YOU MUST DEFINE NONSTRUCTURAL MASS WITH UNITS=TOTAL MASS AND DISTRIBUTION=MASS PROPORTIONAL IF SOME ELEMENTS IN THE ELSET DO NOT HAVE STRUCTURAL MASS.', 
+    'jobName': 'dynamic-1'})
+mdb.jobs['dynamic-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'THE NONSTRUCTURAL MASS IS NOT ALLOWED WITH ELSET ASSEMBLY_BEAM-1__PICKEDSET4 IN Abaqus/Standard AS SOME OF THE ELEMENTS HAVE A NON-POSITIVE STRUCTURAL MASS. YOU MUST DEFINE NONSTRUCTURAL MASS WITH UNITS=TOTAL MASS AND DISTRIBUTION=MASS PROPORTIONAL IF SOME ELEMENTS IN THE ELSET DO NOT HAVE STRUCTURAL MASS.', 
+    'jobName': 'dynamic-1'})
+mdb.jobs['dynamic-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'YOU HAVE ENTERED A ZERO OR NEGATIVE DENSITY VALUE. ABAQUS ALLOWS NON-PHYSICAL DATA; HOWEVER, MOST APPLICATIONS EXPECT A POSITIVE DENSITY VALUE AND GREATER THAN 1.00000E-36 .', 
+    'jobName': 'dynamic-1'})
+mdb.jobs['dynamic-1']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Temp\\dynamic-1.odb', 'jobName': 'dynamic-1'})
+mdb.jobs['dynamic-1']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'dynamic-1'})
+mdb.jobs['dynamic-1']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'dynamic-1'})
+mdb.jobs['dynamic-1']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'dynamic-1'})
+del mdb.models['Model-1'].parts['beam'].engineeringFeatures.inertias['beam-inertia']
+mdb.models['Model-1'].parts['beam'].engineeringFeatures.PointMassInertia(alpha=
+    0.0, composite=0.0, mass=5000.0, name='mass-under-load', region=Region(
+    vertices=mdb.models['Model-1'].parts['beam'].vertices.getSequenceFromMask(
+    mask=('[#2 ]', ), )))
+# Save by Hamed on 2023_03_09-15.29.44; build 6.14-1 2014_06_05-02.41.02 134264

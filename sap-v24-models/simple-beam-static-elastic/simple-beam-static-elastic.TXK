@@ -1,0 +1,7 @@
+Note: Row equation number, Column equation number, Stiffness value. (See .TXA file)
+           1 	           1 	   2400000000.00000     
+           2 	           1 	  0.000000000000000E+000
+           3 	           1 	  0.000000000000000E+000
+           2 	           2 	   72000000.0000000     
+           3 	           2 	  -24000000.0000000     
+           3 	           3 	   32000000.0000000     

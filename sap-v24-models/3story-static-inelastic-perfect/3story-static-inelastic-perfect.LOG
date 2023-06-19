@@ -1,0 +1,135 @@
+
+
+ SAP2000 v24.1.0 Ultimate 64-bit (Analysis Build 9917/64)
+ File: H:\Doctora\Thesis\resul...P Models\3story_perfect - 24\3story_perfect.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2023/06/13  16:17:13
+
+
+ RUNNING ANALYSIS WITHIN THE GUI PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =          14
+    WITH RESTRAINTS                        =           2
+ NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =          21
+ NUMBER OF LOAD PATTERNS                   =           1
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =           1
+ NUMBER OF MASS SOURCES                    =           1
+
+ UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, m, °C, sec
+ GRAVITATIONAL ACCELERATION                =    9.806650
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =       3.888 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           2
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           2
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           2
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           2
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           2
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      16:17:13
+
+ CASE: NONLINEAR
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =         YES
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ EVENT LUMPING TOLERANCE                   =    0.010000
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    0.000100
+
+
+ E L E M E N T   F O R M A T I O N                                      16:17:13
+
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      50     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      0       0       1  Conv   -1   4.29E-11   0.474204   0.474204   0.474204
+      0       0       2  Conv   -1   4.30E-11   0.008224   0.482428   0.482428
+      0       0       3  Conv   -1   4.58E-11   0.029651   0.512079   0.512079
+      0       0       4  Conv   -1   4.60E-11   0.003869   0.515949   0.515949
+      0       0       5         -1  12.348842   0.162080   0.515949   0.515949
+      0       0       5         -2   4.908601   0.162080   0.515949   0.515949
+      0       0       5         -3   3.065029   0.162080   0.515949   0.515949
+      0       0       5         -4   1.913958   0.162080   0.515949   0.515949
+      0       0       5         -5   1.195172   0.162080   0.515949   0.515949
+      0       0       5  Conv   -6   0.746325   0.162080   0.678028   0.678028
+      0       0       6         -1  62.234380   0.308663   0.678028   0.678028
+      0       0       6         -2  60.115851   0.308663   0.678028   0.678028
+      0       0       6         -3  34.609132   0.308663   0.678028   0.678028
+      0       0       6         -4  19.954604   0.308663   0.678028   0.678028
+      0       0       6         -5  11.517018   0.308663   0.678028   0.678028
+      0       0       6         -6   6.650976   0.308663   0.678028   0.678028
+      0       0       6         -7   4.236901   0.308663   0.678028   0.678028
+      0       0       6         -8   3.838757   0.308663   0.678028   0.678028
+      0       0       6         -9   3.691836   0.308663   0.678028   0.678028
+      0       0       6        -10   3.559762   0.308663   0.678028   0.678028
+      0       0       6         -1  32.210926   0.154332   0.678028   0.678028
+      0       0       6  Conv   -2   8.96E-05   0.154332   0.832360   0.832360
+      0       0       7         -1  28.677792   0.147529   0.832360   0.832360
+      0       0       7         -2  27.385657   0.147529   0.832360   0.832360
+      0       0       7         -3  15.768644   0.147529   0.832360   0.832360
+      0       0       7         -4   9.092614   0.147529   0.832360   0.832360
+      0       0       7         -5   5.248258   0.147529   0.832360   0.832360
+      0       0       7         -6   3.030981   0.147529   0.832360   0.832360
+      0       0       7         -7   1.751008   0.147529   0.832360   0.832360
+      0       0       7         -8   1.011746   0.147529   0.832360   0.832360
+      0       0       7  Conv   -9   0.584655   0.147529   0.979889   0.979889
+      0       0       8         -1   1.720805   0.004812   0.979889   0.979889
+      0       0       8         -2   3.185036   0.004812   0.979889   0.979889
+      0       0       8         -3   3.028279   0.004812   0.979889   0.979889
+      0       0       8         -4   2.894920   0.004812   0.979889   0.979889
+      0       0       8         -5   2.767403   0.004812   0.979889   0.979889
+      0       0       8         -6   2.645502   0.004812   0.979889   0.979889
+      0       0       8         -7   2.528971   0.004812   0.979889   0.979889
+      0       0       8         -8   2.417573   0.004812   0.979889   0.979889
+      0       0       8         -9   2.311082   0.004812   0.979889   0.979889
+      0       0       8        -10   2.209281   0.004812   0.979889   0.979889
+      0       0       8  Conv   -1   0.995756   0.002406   0.982295   0.982295
+      0       0       9         -1   2.548622   0.004812   0.982295   0.982295
+      0       0       9         -2   0.016668   0.004812   0.982295   0.982295
+      0       0       9         -1   4.111710   0.009624   0.982295   0.982295
+      0       0       9         -2   0.026561   0.009624   0.982295   0.982295
+      0       0       9         -1   6.733243   0.017705   0.982295   0.982295
+      0       0       9  Conv   -2   0.043109   0.017705   1.000000   1.000000
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =          10
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.01
+ TIME FOR CONTROLLING ANALYSIS             =        0.00
+ TIME FOR UPDATING LOADS AND STATE         =        0.08
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.00
+ TIME FOR SOLVING STIFFNESS MATRIX         =        0.00
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.02
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.00
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        0.11
+
+
+ A N A L Y S I S   C O M P L E T E                          2023/06/13  16:17:13

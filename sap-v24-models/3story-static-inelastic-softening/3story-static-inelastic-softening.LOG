@@ -1,0 +1,171 @@
+
+
+ SAP2000 v24.1.0 Ultimate 64-bit (Analysis Build 9917/64)
+ File: H:\Doctora\Thesis\resul...dels\3story_softening - 24\3story_softening.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2023/06/13  09:45:38
+
+
+ RUNNING ANALYSIS WITHIN THE GUI PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =          14
+    WITH RESTRAINTS                        =           2
+ NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =          21
+ NUMBER OF LOAD PATTERNS                   =           1
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =           1
+ NUMBER OF MASS SOURCES                    =           1
+
+ UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, m, °C, sec
+ GRAVITATIONAL ACCELERATION                =    9.806650
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =       3.888 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           2
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           2
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           2
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           2
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           2
+
+
+ N O N L I N E A R   S T A T I C   A N A L Y S I S                      09:45:38
+
+ CASE: NONLINEAR
+
+ STARTING FROM ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ LOAD CONTROL TYPE                         =       FORCE
+ TYPE OF GEOMETRIC NONLINEARITY            =        NONE
+ USE EVENT STEPPING                        =         YES
+ USE ITERATION                             =         YES
+ USE LINE SEARCH                           =          NO
+ EVENT LUMPING TOLERANCE                   =    0.010000
+ FORCE CONVERGENCE TOLERANCE (RELATIVE)    =    0.000100
+
+
+ E L E M E N T   F O R M A T I O N                                      09:45:38
+
+
+ Negative iterations are Constant-Stiffness
+ Positive iterations are Newton-Raphson
+
+  Saved    Null   Total  Iteration   Relative  Curr Step   Curr Sum    Max Sum
+  Steps   Steps   Steps  this Step  Unbalance       Size   of Steps   of Steps
+ (    1      50     200     -10/40   1.000000   1.000000   1.000000   1.000000)
+
+      0       0       1  Conv   -1   3.56E-11   0.385686   0.385686   0.385686
+      0       0       2  Conv   -1   3.59E-11   0.006654   0.392340   0.392340
+      0       0       3  Conv   -1   3.53E-11   0.023759   0.416099   0.416099
+      0       0       4  Conv   -1   3.57E-11   0.003063   0.419161   0.419161
+      0       0       5         -1   9.223982   0.126249   0.419161   0.419161
+      0       0       5         -2   3.952586   0.126249   0.419161   0.419161
+      0       0       5         -3   2.489089   0.126249   0.419161   0.419161
+      0       0       5         -4   1.569038   0.126249   0.419161   0.419161
+      0       0       5  Conv   -5   0.989067   0.126249   0.545410   0.545410
+      0       0       6         -1  43.609152   0.238935   0.545410   0.545410
+      0       0       6         -2  46.595288   0.238935   0.545410   0.545410
+      0       0       6         -3  27.118913   0.238935   0.545410   0.545410
+      0       0       6         -4  15.894590   0.238935   0.545410   0.545410
+      0       0       6         -5   9.324521   0.238935   0.545410   0.545410
+      0       0       6         -6   6.197730   0.238935   0.545410   0.545410
+      0       0       6         -7   5.818399   0.238935   0.545410   0.545410
+      0       0       6         -8   5.703518   0.238935   0.545410   0.545410
+      0       0       6         -9   5.601068   0.238935   0.545410   0.545410
+      0       0       6        -10   5.501160   0.238935   0.545410   0.545410
+      0       0       6         -1  22.956946   0.119467   0.545410   0.545410
+      0       0       6  Conv   -2   0.043977   0.119467   0.664877   0.664877
+      0       0       7         -1  20.642636   0.114792   0.664877   0.664877
+      0       0       7         -2  21.565593   0.114792   0.664877   0.664877
+      0       0       7         -3  12.585374   0.114792   0.664877   0.664877
+      0       0       7         -4   7.377138   0.114792   0.664877   0.664877
+      0       0       7         -5   4.328277   0.114792   0.664877   0.664877
+      0       0       7         -6   2.540823   0.114792   0.664877   0.664877
+      0       0       7         -7   1.491995   0.114792   0.664877   0.664877
+      0       0       7  Conv   -8   0.876270   0.114792   0.779669   0.779669
+      0       0       8         -1   1.610234   0.003439   0.779669   0.779669
+      0       0       8         -2   2.786706   0.003439   0.779669   0.779669
+      0       0       8         -3   2.743573   0.003439   0.779669   0.779669
+      0       0       8         -4   2.713678   0.003439   0.779669   0.779669
+      0       0       8         -5   2.684079   0.003439   0.779669   0.779669
+      0       0       8         -6   2.654804   0.003439   0.779669   0.779669
+      0       0       8         -7   2.625848   0.003439   0.779669   0.779669
+      0       0       8         -8   2.597208   0.003439   0.779669   0.779669
+      0       0       8         -9   2.568880   0.003439   0.779669   0.779669
+      0       0       8        -10   2.540861   0.003439   0.779669   0.779669
+      0       0       8         -1   1.091650   0.001720   0.779669   0.779669
+      0       0       8  Conv   -2   0.005050   0.001720   0.781389   0.781389
+      0       0       9         -1   1.673779   0.003439   0.781389   0.781389
+      0       0       9         -2   0.056825   0.003439   0.781389   0.781389
+      0       0       9         -1   1.921487   0.004009   0.781389   0.781389
+      0       0       9         -2   7.690873   0.004009   0.781389   0.781389
+      0       0       9         -3  29.922220   0.004009   0.781389   0.781389
+      0       0       9         -4 117.076255   0.004009   0.781389   0.781389
+      0       0       9         -1   1.004472   0.002005   0.781389   0.781389
+      0       0       9  Conv   -2   0.034049   0.002005   0.783394   0.783394
+      0       0      10  Conv   -1   0.812902   0.001649   0.785043   0.785043
+      0       0      11         -1   1.117963  -0.008019   0.785043   0.785043
+      0       0      11         -2   3.41E-11  -0.008019   0.785043   0.785043
+      0       0      11         -1   0.691720  -0.016037   0.785043   0.785043
+      0       0      11  Conv   -1   0.729252  -0.026259   0.758783   0.785043
+      0       0      12  Conv   -1   0.722220  -0.026218   0.732565   0.785043
+      0       0      13  Conv   -1   0.715271  -0.026218   0.706348   0.785043
+      0       0      14  Conv   -1   0.711098  -0.003008   0.703339   0.785043
+      0       0      15         -1  25.612890  -0.007728   0.703339   0.785043
+      0       0      15  Conv   -2   0.196288  -0.007728   0.695611   0.785043
+      0       0      16  Conv   -1   0.128561  -0.005326   0.690285   0.785043
+      0       0      17  Conv   -1   0.302938  -0.008187   0.682098   0.785043
+      0       0      18  Conv   -1   0.709329  -0.024197   0.657900   0.785043
+      0       0      19  Conv   -1   0.711179  -0.000449   0.657451   0.785043
+      0       0      20  Conv   -1   0.717358  -0.001586   0.655865   0.785043
+      0       0      21  Conv   -1   0.725640  -0.002658   0.653207   0.785043
+      0       0      22  Conv   -1   0.770208  -0.024274   0.628933   0.785043
+      0       0      23  Conv   -1   0.776990  -0.022059   0.606874   0.785043
+      0       0      24  Conv   -1   0.777440  -0.001413   0.605461   0.785043
+      0       0      25  Conv   -1   0.778177  -0.002303   0.603158   0.785043
+      0       0      26  Conv   -1   0.785747  -0.022707   0.580451   0.785043
+      0       0      27         -1   7.332418   8.07E-06   0.580451   0.785043
+      0       0      27         -2   7.216013   8.07E-06   0.580451   0.785043
+      0       0      27  Conv   -3   0.258877   8.07E-06   0.580459   0.785043
+      0       0      28         -1   2.831620   0.034823   0.580459   0.785043
+      0       0      28  Conv   -2   0.029030   0.034823   0.615282   0.785043
+      0       0      29         -1  26.889202   0.169771   0.615282   0.785043
+      0       0      29  Conv   -2   0.625191   0.169771   0.785053   0.785053
+      0       0      30         -1  26.516776   0.184300   0.785053   0.785053
+      0       0      30         -2   1.892455   0.184300   0.785053   0.785053
+      0       0      30  Conv   -3   0.911395   0.184300   0.969353   0.969353
+      0       0      31         -1   2.839632   0.010750   0.969353   0.969353
+      0       0      31  Conv   -2   0.129437   0.010750   0.980102   0.980102
+      0       0      32         -1   4.655940   0.019898   0.980102   0.980102
+      0       0      32  Conv   -2   0.123614   0.019898   1.000000   1.000000
+
+ ----------------------------------------
+ BASIC STABILITY CHECK FOR FORCE-CONTROLLED NONLINEAR STATIC LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY)
+
+    NUMBER FOUND AT FINAL CONVERGED STATE  =           0,  OK.
+ ----------------------------------------
+
+ NUMBER OF STIFFNESS FORMATIONS/SOLUTIONS  =          33
+
+ TIME FOR INITIALIZING ANALYSIS            =        0.02
+ TIME FOR CONTROLLING ANALYSIS             =        0.02
+ TIME FOR UPDATING LOADS AND STATE         =        0.06
+ TIME FOR FORMING STIFFNESS MATRIX         =        0.00
+ TIME FOR SOLVING STIFFNESS MATRIX         =        0.06
+ TIME FOR CALCULATING DISPLACEMENTS        =        0.07
+ TIME FOR DETERMINING EVENTS               =        0.00
+ TIME FOR SAVING RESULTS                   =        0.02
+                                               ----------
+ TOTAL TIME FOR THIS ANALYSIS              =        0.25
+
+
+ A N A L Y S I S   C O M P L E T E                          2023/06/13  09:45:39

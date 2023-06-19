@@ -1,0 +1,49 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-1.5, 0.0), point2=(
+    1.5, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='beam-left', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['beam-left'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-1.0, 0.0), point2=(
+    1.0, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='beam-right', 
+    type=DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['beam-right'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0, 1.5), point2=(
+    0.0, -1.5))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='column', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['column'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+del mdb.models['Model-1'].parts['column']
+# Save by Hamed on 2023_03_09-13.36.45; build 6.14-1 2014_06_05-02.41.02 134264
+# Save by Hamed on 2023_03_09-13.36.48; build 6.14-1 2014_06_05-02.41.02 134264

@@ -1,0 +1,940 @@
+File D:\Documentations\Education\Ph.d of Structural Engineering\Seminar 6m - 02.04.19\SAP Models - V24\1story-dynamic-inelastic-ll1.0-ap400k\1story-dynamic-inelastic-ll1.0-ap400k.$2k was saved on m/d/yy at h:mm:ss
+ 
+TABLE:  "ACTIVE DEGREES OF FREEDOM"
+   UX=Yes   UY=No   UZ=Yes   RX=No   RY=Yes   RZ=No
+ 
+TABLE:  "ANALYSIS OPTIONS"
+   Solver=Advanced   SolverProc=Auto   Force32Bit=No   StiffCase=None   GeomMod=None   HingeOpt="In Elements"   NumAThreads=0   MaxFileSize=0   NumDThreads=0   NumRThreads=0   UseMMFiles="Program Determined"   AllowDiff=No
+ 
+TABLE:  "AUTO WAVE 3 - WAVE CHARACTERISTICS - GENERAL"
+   WaveChar=Default   WaveType="From Theory"   KinFactor=1   SWaterDepth=45   WaveHeight=18   WavePeriod=12   WaveTheory=Linear
+ 
+TABLE:  "CASE - DIRECT HISTORY 1 - GENERAL"
+   Case=Linear-direct-0.02   OutSteps=51   StepSize=0.02
+   Case=Linear-direct-0.002   OutSteps=501   StepSize=0.002
+   Case="Nonlinear - 0.02"   OutSteps=51   StepSize=0.02
+   Case="Nonlinear - 0.002"   OutSteps=501   StepSize=0.002
+ 
+TABLE:  "CASE - DIRECT HISTORY 2 - LOAD ASSIGNMENTS"
+   Case=Linear-direct-0.02   LoadType="Load pattern"   LoadName=Point   Function="th 0.02"   LoadSF=1   TimeFactor=1   ArrivalTime=0
+   Case=Linear-direct-0.002   LoadType="Load pattern"   LoadName=Point   Function="th 0.002"   LoadSF=1   TimeFactor=1   ArrivalTime=0
+   Case="Nonlinear - 0.02"   LoadType="Load pattern"   LoadName=Point   Function="th 0.02"   LoadSF=1   TimeFactor=1   ArrivalTime=0
+   Case="Nonlinear - 0.002"   LoadType="Load pattern"   LoadName=Point   Function="th 0.002"   LoadSF=1   TimeFactor=1   ArrivalTime=0
+ 
+TABLE:  "CASE - DIRECT HISTORY 3 - VISCOUS PROPORTIONAL DAMPING"
+   Case=Linear-direct-0.02   MassCoeff=1.42713838185622   StiffCoeff=0.00116230879348496
+   Case=Linear-direct-0.002   MassCoeff=1.42713838185622   StiffCoeff=0.00116230879348496
+   Case="Nonlinear - 0.02"   MassCoeff=1.42713838185622   StiffCoeff=0.00116230879348496
+   Case="Nonlinear - 0.002"   MassCoeff=1.42713838185622   StiffCoeff=0.00116230879348496
+ 
+TABLE:  "CASE - DIRECT HISTORY 4 - INTEGRATION PARAMETERS"
+   Case=Linear-direct-0.02   IntMethod=HilberHughesTaylor   Gamma=0.5   Beta=0.25   Alpha=0
+   Case=Linear-direct-0.002   IntMethod=HilberHughesTaylor   Gamma=0.5   Beta=0.25   Alpha=0
+   Case="Nonlinear - 0.02"   IntMethod=HilberHughesTaylor   Gamma=0.5   Beta=0.25   Alpha=0
+   Case="Nonlinear - 0.002"   IntMethod=HilberHughesTaylor   Gamma=0.5   Beta=0.25   Alpha=0
+ 
+TABLE:  "CASE - DIRECT HISTORY 5 - NONLINEAR PARAMETERS"
+   Case="Nonlinear - 0.02"   GeoNonLin=None   SolScheme="Iterative Only"   DTMax=0   DTMin=0   MaxIterCS=10   MaxIterNR=40   ItConvTol=0.0001   UseLineSrch=Yes   LSPerIter=20   LSTol=0.1   LSStepFact=1.618
+   Case="Nonlinear - 0.002"   GeoNonLin=None   SolScheme="Iterative Only"   DTMax=0   DTMin=0   MaxIterCS=10   MaxIterNR=40   ItConvTol=0.0001   UseLineSrch=Yes   LSPerIter=20   LSTol=0.1   LSStepFact=1.618
+ 
+TABLE:  "CASE - MODAL 1 - GENERAL"
+   Case=MODAL   ModeType=Eigen   MaxNumModes=12   MinNumModes=1   EigenShift=0   EigenCutoff=0   EigenTol=1E-09   AutoShift=Yes
+ 
+TABLE:  "CASE - MODAL HISTORY 1 - GENERAL"
+   Case=Linear-modal-0.02   HistoryType=Transient   OutSteps=51   StepSize=0.02   ConstDamp=0.05
+   Case=Linear-modal-0.002   HistoryType=Transient   OutSteps=501   StepSize=0.002   ConstDamp=0.05
+ 
+TABLE:  "CASE - MODAL HISTORY 2 - LOAD ASSIGNMENTS"
+   Case=Linear-modal-0.02   LoadType="Load pattern"   LoadName=Point   Function="th 0.02"   LoadSF=1   TimeFactor=1   ArrivalTime=0
+   Case=Linear-modal-0.002   LoadType="Load pattern"   LoadName=Point   Function="th 0.002"   LoadSF=1   TimeFactor=1   ArrivalTime=0
+ 
+TABLE:  "CASE - STATIC 1 - LOAD ASSIGNMENTS"
+   Case=DEAD   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
+   Case=Point   LoadType="Load pattern"   LoadName=Point   LoadSF=1
+ 
+TABLE:  "CONNECTIVITY - FRAME"
+   Frame=0   JointI=0   JointJ=1   IsCurved=No   GUID=b8d799b7-420e-4c9a-8fe2-87c8a792e349
+   Frame=1   JointI=1   JointJ=2   IsCurved=No   GUID=5305a3c7-8e3d-4435-806a-b383e0f62934
+   Frame=2   JointI=2   JointJ=3   IsCurved=No   GUID=1ce16a88-31da-436c-8ba5-5327537997be
+   Frame=3   JointI=4   JointJ=3   IsCurved=No   GUID=07a74681-ce97-43b1-8624-3ac506d5035e
+ 
+TABLE:  "COORDINATE SYSTEMS"
+   Name=GLOBAL   Type=Cartesian   X=0   Y=0   Z=0   AboutZ=0   AboutY=0   AboutX=0
+ 
+TABLE:  "DATABASE DOCUMENTATION"
+ 
+TABLE:  "DATABASE FORMAT TYPES"
+   UnitsCurr=Yes   OverrideE=No
+ 
+TABLE:  "FRAME AUTO MESH ASSIGNMENTS"
+   Frame=0   AutoMesh=Yes   AtJoints=Yes   AtFrames=No   NumSegments=0   MaxLength=0   MaxDegrees=0
+   Frame=1   AutoMesh=Yes   AtJoints=Yes   AtFrames=No   NumSegments=0   MaxLength=0   MaxDegrees=0
+   Frame=2   AutoMesh=Yes   AtJoints=Yes   AtFrames=No   NumSegments=0   MaxLength=0   MaxDegrees=0
+   Frame=3   AutoMesh=Yes   AtJoints=Yes   AtFrames=No   NumSegments=0   MaxLength=0   MaxDegrees=0
+ 
+TABLE:  "FRAME DESIGN PROCEDURES"
+   Frame=0   DesignProc="From Material"
+   Frame=1   DesignProc="From Material"
+   Frame=2   DesignProc="From Material"
+   Frame=3   DesignProc="From Material"
+ 
+TABLE:  "FRAME HINGE ASSIGNS 02 - USER DEFINED PROPERTIES"
+   Frame=0   AssignProp=Hinge-PM   DistType=RelDist   RelDist=0
+   Frame=0   AssignProp=Hinge-PM   DistType=RelDist   RelDist=1
+   Frame=1   AssignProp=Hinge-PM   DistType=RelDist   RelDist=0
+   Frame=1   AssignProp=Hinge-PM   DistType=RelDist   RelDist=1
+   Frame=2   AssignProp=Hinge-PM   DistType=RelDist   RelDist=0
+   Frame=2   AssignProp=Hinge-PM   DistType=RelDist   RelDist=1
+   Frame=3   AssignProp=Hinge-PM   DistType=RelDist   RelDist=0
+   Frame=3   AssignProp=Hinge-PM   DistType=RelDist   RelDist=1
+ 
+TABLE:  "FRAME HINGE ASSIGNS 09 - HINGE OVERWRITES"
+   Frame=0   AutoDivide=No   NoLoadDrop=No   LimNegStiff=0.1
+   Frame=1   AutoDivide=No   NoLoadDrop=No   LimNegStiff=0.1
+   Frame=2   AutoDivide=No   NoLoadDrop=No   LimNegStiff=0.1
+   Frame=3   AutoDivide=No   NoLoadDrop=No   LimNegStiff=0.1
+ 
+TABLE:  "FRAME LOADS - DISTRIBUTED"
+   Frame=1   LoadPat=DEAD   CoordSys=GLOBAL   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=2   FOverLA=32700   FOverLB=32700   GUID=23ca8dd4-9c19-4127-9b25-57938148d7aa
+   Frame=2   LoadPat=DEAD   CoordSys=GLOBAL   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=1   FOverLA=32700   FOverLB=32700   GUID=d7fce7e9-a7db-4fc4-bdd8-99f7f20efa1a
+ 
+TABLE:  "FRAME LOAD TRANSFER OPTIONS"
+   Frame=0   Transfer=Yes
+   Frame=1   Transfer=Yes
+   Frame=2   Transfer=Yes
+   Frame=3   Transfer=Yes
+ 
+TABLE:  "FRAME OUTPUT STATION ASSIGNMENTS"
+   Frame=0   StationType=MinNumSta   MinNumSta=3   AddAtElmInt=Yes   AddAtPtLoad=Yes
+   Frame=1   StationType=MaxStaSpcg   MaxStaSpcg=0.5   AddAtElmInt=Yes   AddAtPtLoad=Yes
+   Frame=2   StationType=MaxStaSpcg   MaxStaSpcg=0.5   AddAtElmInt=Yes   AddAtPtLoad=Yes
+   Frame=3   StationType=MinNumSta   MinNumSta=3   AddAtElmInt=Yes   AddAtPtLoad=Yes
+ 
+TABLE:  "FRAME SECTION ASSIGNMENTS"
+   Frame=0   AutoSelect=N.A.   AnalSect=Rectangle   MatProp=Default
+   Frame=1   AutoSelect=N.A.   AnalSect=Rectangle   MatProp=Default
+   Frame=2   AutoSelect=N.A.   AnalSect=Rectangle   MatProp=Default
+   Frame=3   AutoSelect=N.A.   AnalSect=Rectangle   MatProp=Default
+ 
+TABLE:  "FRAME SECTION PROPERTIES 01 - GENERAL"
+   SectionName=Rectangle   Material=Steel   Shape=Rectangular   t3=0.2   t2=0.04   Area=0.008   TorsConst=3.72913834666667E-06   I33=2.66666666666667E-05   I22=1.06666666666667E-06   I23=0   AS2=0.00666666666666667   AS3=0.00666666666666667 _
+        S33Top=0.000266666666666667   S33Bot=0.000266666666666667   S22Left=5.33333333333333E-05   S22Right=5.33333333333333E-05   Z33=0.0004   Z22=8E-05   R33=0.0577350269189626   R22=0.0115470053837925   CGOffset3=0   CGOffset2=0 _
+        EccV2=0   EccV3=0   Cw=0   Color=Cyan   FromFile=No   AMod=1   A2Mod=1   A3Mod=1   JMod=1   I2Mod=1   I3Mod=1   MMod=1   WMod=1   Notes="Added 2023-01-07 8:01:22 PM"
+ 
+TABLE:  "FRAME SECTION PROPERTIES 13 - TIME DEPENDENT"
+   SectionName=Rectangle   TypeSize=Auto   AutoSFSize=1
+ 
+TABLE:  "FUNCTION - PLOT FUNCTIONS"
+   PlotFunc=moment-0-0   Type=Frame   ObjectLabel=0   DistType=RelDist   RelDist=0   AbsDist=0   Component=M3   Mode=All
+   PlotFunc=moment-0-1   Type=Frame   ObjectLabel=0   DistType=RelDist   RelDist=1   AbsDist=3   Component=M3   Mode=All
+   PlotFunc=moment-1-1   Type=Frame   ObjectLabel=1   DistType=RelDist   RelDist=1   AbsDist=2   Component=M3   Mode=All
+   PlotFunc=moment-2-1   Type=Frame   ObjectLabel=2   DistType=RelDist   RelDist=1   AbsDist=1   Component=M3   Mode=All
+   PlotFunc=moment-3-0   Type=Frame   ObjectLabel=3   DistType=RelDist   RelDist=0   AbsDist=0   Component=M3   Mode=All
+   PlotFunc=disp-3-x   Type=Joint   ObjectLabel=3   Component=RelDispU1   Mode=All
+ 
+TABLE:  "FUNCTION - POWER SPECTRAL DENSITY - USER"
+   Name=UNIFPSD   Frequency=0   Value=1
+   Name=UNIFPSD   Frequency=1   Value=1
+ 
+TABLE:  "FUNCTION - RESPONSE SPECTRUM - USER"
+   Name=UNIFRS   Period=0   Accel=1   FuncDamp=0.05
+   Name=UNIFRS   Period=1   Accel=1
+ 
+TABLE:  "FUNCTION - STEADY STATE - USER"
+   Name=UNIFSS   Frequency=0   Value=1
+   Name=UNIFSS   Frequency=1   Value=1
+ 
+TABLE:  "FUNCTION - TIME HISTORY - USER"
+   Name="th 0.02"   Time=0   Value=0
+   Name="th 0.02"   Time=0.02   Value=22661.246
+   Name="th 0.02"   Time=0.04   Value=43104.25
+   Name="th 0.02"   Time=0.06   Value=73661.25
+   Name="th 0.02"   Time=0.08   Value=69744.14
+   Name="th 0.02"   Time=0.1   Value=86666.67
+   Name="th 0.02"   Time=0.12   Value=85077.48
+   Name="th 0.02"   Time=0.14   Value=73661.25
+   Name="th 0.02"   Time=0.16   Value=80104.25
+   Name="th 0.02"   Time=0.18   Value=66994.58
+   Name="th 0.02"   Time=0.2   Value=63333.33
+   Name="th 0.02"   Time=0.22   Value=61733.33
+   Name="th 0.02"   Time=0.24   Value=41833.33
+   Name="th 0.02"   Time=0.26   Value=16994.58
+   Name="th 0.02"   Time=0.28   Value=104.2518
+   Name="th 0.02"   Time=0.3   Value=0
+   Name="th 0.02"   Time=0.32   Value=-30077.48
+   Name="th 0.02"   Time=0.34   Value=-15000
+   Name="th 0.02"   Time=0.36   Value=-33333.3
+   Name="th 0.02"   Time=0.38   Value=-45327.9
+   Name="th 0.02"   Time=0.4   Value=-26666.67
+   Name="th 0.02"   Time=0.42   Value=-52966.9
+   Name="th 0.02"   Time=0.44   Value=-63333.3
+   Name="th 0.02"   Time=0.46   Value=-56666.7
+   Name="th 0.02"   Time=0.48   Value=-40000
+   Name="th 0.02"   Time=0.5   Value=-60000
+   Name="th 0.02"   Time=0.52   Value=-36666.7
+   Name="th 0.02"   Time=0.54   Value=-30000
+   Name="th 0.02"   Time=0.56   Value=-23333.33
+   Name="th 0.02"   Time=0.58   Value=-6666.67
+   Name="th 0.02"   Time=0.6   Value=3333.3333
+   Name="th 0.02"   Time=0.62   Value=15000
+   Name="th 0.02"   Time=0.64   Value=0
+   Name="th 0.02"   Time=0.66   Value=-22661.25
+   Name="th 0.02"   Time=0.68   Value=-43104.3
+   Name="th 0.02"   Time=0.7   Value=-59327.9
+   Name="th 0.02"   Time=0.72   Value=-63077.5
+   Name="th 0.02"   Time=0.74   Value=-33333.3
+   Name="th 0.02"   Time=0.76   Value=-63077.5
+   Name="th 0.02"   Time=0.78   Value=-59327.9
+   Name="th 0.02"   Time=0.8   Value=-43104.3
+   Name="th 0.02"   Time=0.82   Value=-22661.25
+   Name="th 0.02"   Time=0.84   Value=0
+   Name="th 0.02"   Time=0.86   Value=22661.246
+   Name="th 0.02"   Time=0.88   Value=43104.25
+   Name="th 0.02"   Time=0.9   Value=59327.91
+   Name="th 0.02"   Time=0.92   Value=69744.14
+   Name="th 0.02"   Time=0.94   Value=73333.33
+   Name="th 0.02"   Time=0.96   Value=69744.14
+   Name="th 0.02"   Time=0.98   Value=59327.91
+   Name="th 0.02"   Time=1   Value=43104.25
+   Name="th 0.002"   Time=0   Value=0
+   Name="th 0.002"   Time=0.002   Value=2266.1246
+   Name="th 0.002"   Time=0.004   Value=4532.2493
+   Name="th 0.002"   Time=0.006   Value=6798.3739
+   Name="th 0.002"   Time=0.008   Value=9064.4985
+   Name="th 0.002"   Time=0.01   Value=11330.623
+   Name="th 0.002"   Time=0.012   Value=13596.748
+   Name="th 0.002"   Time=0.014   Value=15862.872
+   Name="th 0.002"   Time=0.016   Value=18128.997
+   Name="th 0.002"   Time=0.018   Value=20395.122
+   Name="th 0.002"   Time=0.02   Value=22661.246
+   Name="th 0.002"   Time=0.022   Value=24705.547
+   Name="th 0.002"   Time=0.024   Value=26749.847
+   Name="th 0.002"   Time=0.026   Value=28794.148
+   Name="th 0.002"   Time=0.028   Value=30838.448
+   Name="th 0.002"   Time=0.03   Value=32882.75
+   Name="th 0.002"   Time=0.032   Value=34927.05
+   Name="th 0.002"   Time=0.034   Value=36971.35
+   Name="th 0.002"   Time=0.036   Value=39015.65
+   Name="th 0.002"   Time=0.038   Value=41059.95
+   Name="th 0.002"   Time=0.04   Value=43104.25
+   Name="th 0.002"   Time=0.042   Value=46159.95
+   Name="th 0.002"   Time=0.044   Value=49215.65
+   Name="th 0.002"   Time=0.046   Value=52271.35
+   Name="th 0.002"   Time=0.048   Value=55327.05
+   Name="th 0.002"   Time=0.05   Value=58382.75
+   Name="th 0.002"   Time=0.052   Value=61438.45
+   Name="th 0.002"   Time=0.054   Value=64494.15
+   Name="th 0.002"   Time=0.056   Value=67549.85
+   Name="th 0.002"   Time=0.058   Value=70605.55
+   Name="th 0.002"   Time=0.06   Value=73661.25
+   Name="th 0.002"   Time=0.062   Value=73269.54
+   Name="th 0.002"   Time=0.064   Value=72877.83
+   Name="th 0.002"   Time=0.066   Value=72486.12
+   Name="th 0.002"   Time=0.068   Value=72094.41
+   Name="th 0.002"   Time=0.07   Value=71702.7
+   Name="th 0.002"   Time=0.072   Value=71310.99
+   Name="th 0.002"   Time=0.074   Value=70919.28
+   Name="th 0.002"   Time=0.076   Value=70527.56
+   Name="th 0.002"   Time=0.078   Value=70135.85
+   Name="th 0.002"   Time=0.08   Value=69744.14
+   Name="th 0.002"   Time=0.082   Value=71436.4
+   Name="th 0.002"   Time=0.084   Value=73128.65
+   Name="th 0.002"   Time=0.086   Value=74820.9
+   Name="th 0.002"   Time=0.088   Value=76513.15
+   Name="th 0.002"   Time=0.09   Value=78205.41
+   Name="th 0.002"   Time=0.092   Value=79897.66
+   Name="th 0.002"   Time=0.094   Value=81589.91
+   Name="th 0.002"   Time=0.096   Value=83282.16
+   Name="th 0.002"   Time=0.098   Value=84974.41
+   Name="th 0.002"   Time=0.1   Value=86666.67
+   Name="th 0.002"   Time=0.102   Value=86507.75
+   Name="th 0.002"   Time=0.104   Value=86348.83
+   Name="th 0.002"   Time=0.106   Value=86189.91
+   Name="th 0.002"   Time=0.108   Value=86030.99
+   Name="th 0.002"   Time=0.11   Value=85872.07
+   Name="th 0.002"   Time=0.112   Value=85713.15
+   Name="th 0.002"   Time=0.114   Value=85554.23
+   Name="th 0.002"   Time=0.116   Value=85395.32
+   Name="th 0.002"   Time=0.118   Value=85236.4
+   Name="th 0.002"   Time=0.12   Value=85077.48
+   Name="th 0.002"   Time=0.122   Value=83935.85
+   Name="th 0.002"   Time=0.124   Value=82794.23
+   Name="th 0.002"   Time=0.126   Value=81652.61
+   Name="th 0.002"   Time=0.128   Value=80510.99
+   Name="th 0.002"   Time=0.13   Value=79369.36
+   Name="th 0.002"   Time=0.132   Value=78227.74
+   Name="th 0.002"   Time=0.134   Value=77086.12
+   Name="th 0.002"   Time=0.136   Value=75944.49
+   Name="th 0.002"   Time=0.138   Value=74802.87
+   Name="th 0.002"   Time=0.14   Value=73661.25
+   Name="th 0.002"   Time=0.142   Value=74305.55
+   Name="th 0.002"   Time=0.144   Value=74949.85
+   Name="th 0.002"   Time=0.146   Value=75594.15
+   Name="th 0.002"   Time=0.148   Value=76238.45
+   Name="th 0.002"   Time=0.15   Value=76882.75
+   Name="th 0.002"   Time=0.152   Value=77527.05
+   Name="th 0.002"   Time=0.154   Value=78171.35
+   Name="th 0.002"   Time=0.156   Value=78815.65
+   Name="th 0.002"   Time=0.158   Value=79459.95
+   Name="th 0.002"   Time=0.16   Value=80104.25
+   Name="th 0.002"   Time=0.162   Value=78793.28
+   Name="th 0.002"   Time=0.164   Value=77482.32
+   Name="th 0.002"   Time=0.166   Value=76171.35
+   Name="th 0.002"   Time=0.168   Value=74860.38
+   Name="th 0.002"   Time=0.17   Value=73549.42
+   Name="th 0.002"   Time=0.172   Value=72238.45
+   Name="th 0.002"   Time=0.174   Value=70927.48
+   Name="th 0.002"   Time=0.176   Value=69616.51
+   Name="th 0.002"   Time=0.178   Value=68305.55
+   Name="th 0.002"   Time=0.18   Value=66994.58
+   Name="th 0.002"   Time=0.182   Value=66628.45
+   Name="th 0.002"   Time=0.184   Value=66262.33
+   Name="th 0.002"   Time=0.186   Value=65896.21
+   Name="th 0.002"   Time=0.188   Value=65530.08
+   Name="th 0.002"   Time=0.19   Value=65163.96
+   Name="th 0.002"   Time=0.192   Value=64797.83
+   Name="th 0.002"   Time=0.194   Value=64431.71
+   Name="th 0.002"   Time=0.196   Value=64065.58
+   Name="th 0.002"   Time=0.198   Value=63699.46
+   Name="th 0.002"   Time=0.2   Value=63333.33
+   Name="th 0.002"   Time=0.202   Value=63173.33
+   Name="th 0.002"   Time=0.204   Value=63013.33
+   Name="th 0.002"   Time=0.206   Value=62853.33
+   Name="th 0.002"   Time=0.208   Value=62693.33
+   Name="th 0.002"   Time=0.21   Value=62533.33
+   Name="th 0.002"   Time=0.212   Value=62373.33
+   Name="th 0.002"   Time=0.214   Value=62213.33
+   Name="th 0.002"   Time=0.216   Value=62053.33
+   Name="th 0.002"   Time=0.218   Value=61893.33
+   Name="th 0.002"   Time=0.22   Value=61733.33
+   Name="th 0.002"   Time=0.222   Value=59743.33
+   Name="th 0.002"   Time=0.224   Value=57753.33
+   Name="th 0.002"   Time=0.226   Value=55763.33
+   Name="th 0.002"   Time=0.228   Value=53773.33
+   Name="th 0.002"   Time=0.23   Value=51783.33
+   Name="th 0.002"   Time=0.232   Value=49793.33
+   Name="th 0.002"   Time=0.234   Value=47803.33
+   Name="th 0.002"   Time=0.236   Value=45813.33
+   Name="th 0.002"   Time=0.238   Value=43823.33
+   Name="th 0.002"   Time=0.24   Value=41833.33
+   Name="th 0.002"   Time=0.242   Value=39349.46
+   Name="th 0.002"   Time=0.244   Value=36865.58
+   Name="th 0.002"   Time=0.246   Value=34381.71
+   Name="th 0.002"   Time=0.248   Value=31897.83
+   Name="th 0.002"   Time=0.25   Value=29413.956
+   Name="th 0.002"   Time=0.252   Value=26930.081
+   Name="th 0.002"   Time=0.254   Value=24446.206
+   Name="th 0.002"   Time=0.256   Value=21962.33
+   Name="th 0.002"   Time=0.258   Value=19478.455
+   Name="th 0.002"   Time=0.26   Value=16994.58
+   Name="th 0.002"   Time=0.262   Value=15305.547
+   Name="th 0.002"   Time=0.264   Value=13616.514
+   Name="th 0.002"   Time=0.266   Value=11927.481
+   Name="th 0.002"   Time=0.268   Value=10238.448
+   Name="th 0.002"   Time=0.27   Value=8549.4157
+   Name="th 0.002"   Time=0.272   Value=6860.3829
+   Name="th 0.002"   Time=0.274   Value=5171.3502
+   Name="th 0.002"   Time=0.276   Value=3482.3174
+   Name="th 0.002"   Time=0.278   Value=1793.2846
+   Name="th 0.002"   Time=0.28   Value=104.2518
+   Name="th 0.002"   Time=0.282   Value=93.8267
+   Name="th 0.002"   Time=0.284   Value=83.4015
+   Name="th 0.002"   Time=0.286   Value=72.9763
+   Name="th 0.002"   Time=0.288   Value=62.5511
+   Name="th 0.002"   Time=0.29   Value=52.1259
+   Name="th 0.002"   Time=0.292   Value=41.7007
+   Name="th 0.002"   Time=0.294   Value=31.2756
+   Name="th 0.002"   Time=0.296   Value=20.8504
+   Name="th 0.002"   Time=0.298   Value=10.4252
+   Name="th 0.002"   Time=0.3   Value=0
+   Name="th 0.002"   Time=0.302   Value=-3007.748
+   Name="th 0.002"   Time=0.304   Value=-6015.5
+   Name="th 0.002"   Time=0.306   Value=-9023.24
+   Name="th 0.002"   Time=0.308   Value=-12030.99
+   Name="th 0.002"   Time=0.31   Value=-15038.74
+   Name="th 0.002"   Time=0.312   Value=-18046.49
+   Name="th 0.002"   Time=0.314   Value=-21054.23
+   Name="th 0.002"   Time=0.316   Value=-24061.98
+   Name="th 0.002"   Time=0.318   Value=-27069.73
+   Name="th 0.002"   Time=0.32   Value=-30077.48
+   Name="th 0.002"   Time=0.322   Value=-28569.73
+   Name="th 0.002"   Time=0.324   Value=-27061.98
+   Name="th 0.002"   Time=0.326   Value=-25554.23
+   Name="th 0.002"   Time=0.328   Value=-24046.49
+   Name="th 0.002"   Time=0.33   Value=-22538.74
+   Name="th 0.002"   Time=0.332   Value=-21030.99
+   Name="th 0.002"   Time=0.334   Value=-19523.24
+   Name="th 0.002"   Time=0.336   Value=-18015.5
+   Name="th 0.002"   Time=0.338   Value=-16507.75
+   Name="th 0.002"   Time=0.34   Value=-15000
+   Name="th 0.002"   Time=0.342   Value=-16833.33
+   Name="th 0.002"   Time=0.344   Value=-18666.67
+   Name="th 0.002"   Time=0.346   Value=-20500
+   Name="th 0.002"   Time=0.348   Value=-22333.33
+   Name="th 0.002"   Time=0.35   Value=-24166.67
+   Name="th 0.002"   Time=0.352   Value=-26000
+   Name="th 0.002"   Time=0.354   Value=-27833.33
+   Name="th 0.002"   Time=0.356   Value=-29666.67
+   Name="th 0.002"   Time=0.358   Value=-31500
+   Name="th 0.002"   Time=0.36   Value=-33333.3
+   Name="th 0.002"   Time=0.362   Value=-34532.8
+   Name="th 0.002"   Time=0.364   Value=-35732.2
+   Name="th 0.002"   Time=0.366   Value=-36931.7
+   Name="th 0.002"   Time=0.368   Value=-38131.2
+   Name="th 0.002"   Time=0.37   Value=-39330.6
+   Name="th 0.002"   Time=0.372   Value=-40530.1
+   Name="th 0.002"   Time=0.374   Value=-41729.5
+   Name="th 0.002"   Time=0.376   Value=-42929
+   Name="th 0.002"   Time=0.378   Value=-44128.4
+   Name="th 0.002"   Time=0.38   Value=-45327.9
+   Name="th 0.002"   Time=0.382   Value=-43461.8
+   Name="th 0.002"   Time=0.384   Value=-41595.7
+   Name="th 0.002"   Time=0.386   Value=-39729.5
+   Name="th 0.002"   Time=0.388   Value=-37863.4
+   Name="th 0.002"   Time=0.39   Value=-35997.3
+   Name="th 0.002"   Time=0.392   Value=-34131.2
+   Name="th 0.002"   Time=0.394   Value=-32265
+   Name="th 0.002"   Time=0.396   Value=-30398.91
+   Name="th 0.002"   Time=0.398   Value=-28532.79
+   Name="th 0.002"   Time=0.4   Value=-26666.67
+   Name="th 0.002"   Time=0.402   Value=-29296.69
+   Name="th 0.002"   Time=0.404   Value=-31926.7
+   Name="th 0.002"   Time=0.406   Value=-34556.7
+   Name="th 0.002"   Time=0.408   Value=-37186.8
+   Name="th 0.002"   Time=0.41   Value=-39816.8
+   Name="th 0.002"   Time=0.412   Value=-42446.8
+   Name="th 0.002"   Time=0.414   Value=-45076.8
+   Name="th 0.002"   Time=0.416   Value=-47706.9
+   Name="th 0.002"   Time=0.418   Value=-50336.9
+   Name="th 0.002"   Time=0.42   Value=-52966.9
+   Name="th 0.002"   Time=0.422   Value=-54003.6
+   Name="th 0.002"   Time=0.424   Value=-55040.2
+   Name="th 0.002"   Time=0.426   Value=-56076.8
+   Name="th 0.002"   Time=0.428   Value=-57113.5
+   Name="th 0.002"   Time=0.43   Value=-58150.1
+   Name="th 0.002"   Time=0.432   Value=-59186.8
+   Name="th 0.002"   Time=0.434   Value=-60223.4
+   Name="th 0.002"   Time=0.436   Value=-61260
+   Name="th 0.002"   Time=0.438   Value=-62296.7
+   Name="th 0.002"   Time=0.44   Value=-63333.3
+   Name="th 0.002"   Time=0.442   Value=-62666.7
+   Name="th 0.002"   Time=0.444   Value=-62000
+   Name="th 0.002"   Time=0.446   Value=-61333.3
+   Name="th 0.002"   Time=0.448   Value=-60666.7
+   Name="th 0.002"   Time=0.45   Value=-60000
+   Name="th 0.002"   Time=0.452   Value=-59333.3
+   Name="th 0.002"   Time=0.454   Value=-58666.7
+   Name="th 0.002"   Time=0.456   Value=-58000
+   Name="th 0.002"   Time=0.458   Value=-57333.3
+   Name="th 0.002"   Time=0.46   Value=-56666.7
+   Name="th 0.002"   Time=0.462   Value=-55000
+   Name="th 0.002"   Time=0.464   Value=-53333.3
+   Name="th 0.002"   Time=0.466   Value=-51666.7
+   Name="th 0.002"   Time=0.468   Value=-50000
+   Name="th 0.002"   Time=0.47   Value=-48333.3
+   Name="th 0.002"   Time=0.472   Value=-46666.7
+   Name="th 0.002"   Time=0.474   Value=-45000
+   Name="th 0.002"   Time=0.476   Value=-43333.3
+   Name="th 0.002"   Time=0.478   Value=-41666.7
+   Name="th 0.002"   Time=0.48   Value=-40000
+   Name="th 0.002"   Time=0.482   Value=-42000
+   Name="th 0.002"   Time=0.484   Value=-44000
+   Name="th 0.002"   Time=0.486   Value=-46000
+   Name="th 0.002"   Time=0.488   Value=-48000
+   Name="th 0.002"   Time=0.49   Value=-50000
+   Name="th 0.002"   Time=0.492   Value=-52000
+   Name="th 0.002"   Time=0.494   Value=-54000
+   Name="th 0.002"   Time=0.496   Value=-56000
+   Name="th 0.002"   Time=0.498   Value=-58000
+   Name="th 0.002"   Time=0.5   Value=-60000
+   Name="th 0.002"   Time=0.502   Value=-57666.7
+   Name="th 0.002"   Time=0.504   Value=-55333.3
+   Name="th 0.002"   Time=0.506   Value=-53000
+   Name="th 0.002"   Time=0.508   Value=-50666.7
+   Name="th 0.002"   Time=0.51   Value=-48333.3
+   Name="th 0.002"   Time=0.512   Value=-46000
+   Name="th 0.002"   Time=0.514   Value=-43666.7
+   Name="th 0.002"   Time=0.516   Value=-41333.3
+   Name="th 0.002"   Time=0.518   Value=-39000
+   Name="th 0.002"   Time=0.52   Value=-36666.7
+   Name="th 0.002"   Time=0.522   Value=-36000
+   Name="th 0.002"   Time=0.524   Value=-35333.3
+   Name="th 0.002"   Time=0.526   Value=-34666.7
+   Name="th 0.002"   Time=0.528   Value=-34000
+   Name="th 0.002"   Time=0.53   Value=-33333.3
+   Name="th 0.002"   Time=0.532   Value=-32666.7
+   Name="th 0.002"   Time=0.534   Value=-32000
+   Name="th 0.002"   Time=0.536   Value=-31333.33
+   Name="th 0.002"   Time=0.538   Value=-30666.67
+   Name="th 0.002"   Time=0.54   Value=-30000
+   Name="th 0.002"   Time=0.542   Value=-29333.33
+   Name="th 0.002"   Time=0.544   Value=-28666.67
+   Name="th 0.002"   Time=0.546   Value=-28000
+   Name="th 0.002"   Time=0.548   Value=-27333.33
+   Name="th 0.002"   Time=0.55   Value=-26666.67
+   Name="th 0.002"   Time=0.552   Value=-26000
+   Name="th 0.002"   Time=0.554   Value=-25333.33
+   Name="th 0.002"   Time=0.556   Value=-24666.67
+   Name="th 0.002"   Time=0.558   Value=-24000
+   Name="th 0.002"   Time=0.56   Value=-23333.33
+   Name="th 0.002"   Time=0.562   Value=-21666.67
+   Name="th 0.002"   Time=0.564   Value=-20000
+   Name="th 0.002"   Time=0.566   Value=-18333.33
+   Name="th 0.002"   Time=0.568   Value=-16666.67
+   Name="th 0.002"   Time=0.57   Value=-15000
+   Name="th 0.002"   Time=0.572   Value=-13333.33
+   Name="th 0.002"   Time=0.574   Value=-11666.67
+   Name="th 0.002"   Time=0.576   Value=-10000
+   Name="th 0.002"   Time=0.578   Value=-8333.33
+   Name="th 0.002"   Time=0.58   Value=-6666.67
+   Name="th 0.002"   Time=0.582   Value=-5666.67
+   Name="th 0.002"   Time=0.584   Value=-4666.67
+   Name="th 0.002"   Time=0.586   Value=-3666.67
+   Name="th 0.002"   Time=0.588   Value=-2666.667
+   Name="th 0.002"   Time=0.59   Value=-1666.667
+   Name="th 0.002"   Time=0.592   Value=-666.6667
+   Name="th 0.002"   Time=0.594   Value=333.3333
+   Name="th 0.002"   Time=0.596   Value=1333.3333
+   Name="th 0.002"   Time=0.598   Value=2333.3333
+   Name="th 0.002"   Time=0.6   Value=3333.3333
+   Name="th 0.002"   Time=0.602   Value=4500
+   Name="th 0.002"   Time=0.604   Value=5666.6667
+   Name="th 0.002"   Time=0.606   Value=6833.3333
+   Name="th 0.002"   Time=0.608   Value=8000
+   Name="th 0.002"   Time=0.61   Value=9166.6667
+   Name="th 0.002"   Time=0.612   Value=10333.333
+   Name="th 0.002"   Time=0.614   Value=11500
+   Name="th 0.002"   Time=0.616   Value=12666.667
+   Name="th 0.002"   Time=0.618   Value=13833.333
+   Name="th 0.002"   Time=0.62   Value=15000
+   Name="th 0.002"   Time=0.622   Value=13500
+   Name="th 0.002"   Time=0.624   Value=12000
+   Name="th 0.002"   Time=0.626   Value=10500
+   Name="th 0.002"   Time=0.628   Value=9000
+   Name="th 0.002"   Time=0.63   Value=7500
+   Name="th 0.002"   Time=0.632   Value=6000
+   Name="th 0.002"   Time=0.634   Value=4500
+   Name="th 0.002"   Time=0.636   Value=3000
+   Name="th 0.002"   Time=0.638   Value=1500
+   Name="th 0.002"   Time=0.64   Value=0
+   Name="th 0.002"   Time=0.642   Value=-2266.125
+   Name="th 0.002"   Time=0.644   Value=-4532.25
+   Name="th 0.002"   Time=0.646   Value=-6798.37
+   Name="th 0.002"   Time=0.648   Value=-9064.5
+   Name="th 0.002"   Time=0.65   Value=-11330.62
+   Name="th 0.002"   Time=0.652   Value=-13596.75
+   Name="th 0.002"   Time=0.654   Value=-15862.87
+   Name="th 0.002"   Time=0.656   Value=-18129
+   Name="th 0.002"   Time=0.658   Value=-20395.12
+   Name="th 0.002"   Time=0.66   Value=-22661.25
+   Name="th 0.002"   Time=0.662   Value=-24705.55
+   Name="th 0.002"   Time=0.664   Value=-26749.85
+   Name="th 0.002"   Time=0.666   Value=-28794.15
+   Name="th 0.002"   Time=0.668   Value=-30838.45
+   Name="th 0.002"   Time=0.67   Value=-32882.7
+   Name="th 0.002"   Time=0.672   Value=-34927
+   Name="th 0.002"   Time=0.674   Value=-36971.4
+   Name="th 0.002"   Time=0.676   Value=-39015.7
+   Name="th 0.002"   Time=0.678   Value=-41060
+   Name="th 0.002"   Time=0.68   Value=-43104.3
+   Name="th 0.002"   Time=0.682   Value=-44726.6
+   Name="th 0.002"   Time=0.684   Value=-46349
+   Name="th 0.002"   Time=0.686   Value=-47971.4
+   Name="th 0.002"   Time=0.688   Value=-49593.7
+   Name="th 0.002"   Time=0.69   Value=-51216.1
+   Name="th 0.002"   Time=0.692   Value=-52838.4
+   Name="th 0.002"   Time=0.694   Value=-54460.8
+   Name="th 0.002"   Time=0.696   Value=-56083.2
+   Name="th 0.002"   Time=0.698   Value=-57705.5
+   Name="th 0.002"   Time=0.7   Value=-59327.9
+   Name="th 0.002"   Time=0.702   Value=-59702.9
+   Name="th 0.002"   Time=0.704   Value=-60077.8
+   Name="th 0.002"   Time=0.706   Value=-60452.8
+   Name="th 0.002"   Time=0.708   Value=-60827.7
+   Name="th 0.002"   Time=0.71   Value=-61202.7
+   Name="th 0.002"   Time=0.712   Value=-61577.7
+   Name="th 0.002"   Time=0.714   Value=-61952.6
+   Name="th 0.002"   Time=0.716   Value=-62327.6
+   Name="th 0.002"   Time=0.718   Value=-62702.5
+   Name="th 0.002"   Time=0.72   Value=-63077.5
+   Name="th 0.002"   Time=0.722   Value=-60103.1
+   Name="th 0.002"   Time=0.724   Value=-57128.6
+   Name="th 0.002"   Time=0.726   Value=-54154.2
+   Name="th 0.002"   Time=0.728   Value=-51179.8
+   Name="th 0.002"   Time=0.73   Value=-48205.4
+   Name="th 0.002"   Time=0.732   Value=-45231
+   Name="th 0.002"   Time=0.734   Value=-42256.6
+   Name="th 0.002"   Time=0.736   Value=-39282.2
+   Name="th 0.002"   Time=0.738   Value=-36307.7
+   Name="th 0.002"   Time=0.74   Value=-33333.3
+   Name="th 0.002"   Time=0.742   Value=-36307.7
+   Name="th 0.002"   Time=0.744   Value=-39282.2
+   Name="th 0.002"   Time=0.746   Value=-42256.6
+   Name="th 0.002"   Time=0.748   Value=-45231
+   Name="th 0.002"   Time=0.75   Value=-48205.4
+   Name="th 0.002"   Time=0.752   Value=-51179.8
+   Name="th 0.002"   Time=0.754   Value=-54154.2
+   Name="th 0.002"   Time=0.756   Value=-57128.6
+   Name="th 0.002"   Time=0.758   Value=-60103.1
+   Name="th 0.002"   Time=0.76   Value=-63077.5
+   Name="th 0.002"   Time=0.762   Value=-62702.5
+   Name="th 0.002"   Time=0.764   Value=-62327.6
+   Name="th 0.002"   Time=0.766   Value=-61952.6
+   Name="th 0.002"   Time=0.768   Value=-61577.7
+   Name="th 0.002"   Time=0.77   Value=-61202.7
+   Name="th 0.002"   Time=0.772   Value=-60827.7
+   Name="th 0.002"   Time=0.774   Value=-60452.8
+   Name="th 0.002"   Time=0.776   Value=-60077.8
+   Name="th 0.002"   Time=0.778   Value=-59702.9
+   Name="th 0.002"   Time=0.78   Value=-59327.9
+   Name="th 0.002"   Time=0.782   Value=-57705.5
+   Name="th 0.002"   Time=0.784   Value=-56083.2
+   Name="th 0.002"   Time=0.786   Value=-54460.8
+   Name="th 0.002"   Time=0.788   Value=-52838.4
+   Name="th 0.002"   Time=0.79   Value=-51216.1
+   Name="th 0.002"   Time=0.792   Value=-49593.7
+   Name="th 0.002"   Time=0.794   Value=-47971.4
+   Name="th 0.002"   Time=0.796   Value=-46349
+   Name="th 0.002"   Time=0.798   Value=-44726.6
+   Name="th 0.002"   Time=0.8   Value=-43104.3
+   Name="th 0.002"   Time=0.802   Value=-41060
+   Name="th 0.002"   Time=0.804   Value=-39015.7
+   Name="th 0.002"   Time=0.806   Value=-36971.4
+   Name="th 0.002"   Time=0.808   Value=-34927
+   Name="th 0.002"   Time=0.81   Value=-32882.7
+   Name="th 0.002"   Time=0.812   Value=-30838.45
+   Name="th 0.002"   Time=0.814   Value=-28794.15
+   Name="th 0.002"   Time=0.816   Value=-26749.85
+   Name="th 0.002"   Time=0.818   Value=-24705.55
+   Name="th 0.002"   Time=0.82   Value=-22661.25
+   Name="th 0.002"   Time=0.822   Value=-20395.12
+   Name="th 0.002"   Time=0.824   Value=-18129
+   Name="th 0.002"   Time=0.826   Value=-15862.87
+   Name="th 0.002"   Time=0.828   Value=-13596.75
+   Name="th 0.002"   Time=0.83   Value=-11330.62
+   Name="th 0.002"   Time=0.832   Value=-9064.5
+   Name="th 0.002"   Time=0.834   Value=-6798.37
+   Name="th 0.002"   Time=0.836   Value=-4532.25
+   Name="th 0.002"   Time=0.838   Value=-2266.125
+   Name="th 0.002"   Time=0.84   Value=0
+   Name="th 0.002"   Time=0.842   Value=2266.1246
+   Name="th 0.002"   Time=0.844   Value=4532.2493
+   Name="th 0.002"   Time=0.846   Value=6798.3739
+   Name="th 0.002"   Time=0.848   Value=9064.4985
+   Name="th 0.002"   Time=0.85   Value=11330.623
+   Name="th 0.002"   Time=0.852   Value=13596.748
+   Name="th 0.002"   Time=0.854   Value=15862.872
+   Name="th 0.002"   Time=0.856   Value=18128.997
+   Name="th 0.002"   Time=0.858   Value=20395.122
+   Name="th 0.002"   Time=0.86   Value=22661.246
+   Name="th 0.002"   Time=0.862   Value=24705.547
+   Name="th 0.002"   Time=0.864   Value=26749.847
+   Name="th 0.002"   Time=0.866   Value=28794.148
+   Name="th 0.002"   Time=0.868   Value=30838.448
+   Name="th 0.002"   Time=0.87   Value=32882.75
+   Name="th 0.002"   Time=0.872   Value=34927.05
+   Name="th 0.002"   Time=0.874   Value=36971.35
+   Name="th 0.002"   Time=0.876   Value=39015.65
+   Name="th 0.002"   Time=0.878   Value=41059.95
+   Name="th 0.002"   Time=0.88   Value=43104.25
+   Name="th 0.002"   Time=0.882   Value=44726.62
+   Name="th 0.002"   Time=0.884   Value=46348.98
+   Name="th 0.002"   Time=0.886   Value=47971.35
+   Name="th 0.002"   Time=0.888   Value=49593.72
+   Name="th 0.002"   Time=0.89   Value=51216.08
+   Name="th 0.002"   Time=0.892   Value=52838.45
+   Name="th 0.002"   Time=0.894   Value=54460.81
+   Name="th 0.002"   Time=0.896   Value=56083.18
+   Name="th 0.002"   Time=0.898   Value=57705.55
+   Name="th 0.002"   Time=0.9   Value=59327.91
+   Name="th 0.002"   Time=0.902   Value=60369.54
+   Name="th 0.002"   Time=0.904   Value=61411.16
+   Name="th 0.002"   Time=0.906   Value=62452.78
+   Name="th 0.002"   Time=0.908   Value=63494.41
+   Name="th 0.002"   Time=0.91   Value=64536.03
+   Name="th 0.002"   Time=0.912   Value=65577.65
+   Name="th 0.002"   Time=0.914   Value=66619.28
+   Name="th 0.002"   Time=0.916   Value=67660.9
+   Name="th 0.002"   Time=0.918   Value=68702.52
+   Name="th 0.002"   Time=0.92   Value=69744.14
+   Name="th 0.002"   Time=0.922   Value=70103.06
+   Name="th 0.002"   Time=0.924   Value=70461.98
+   Name="th 0.002"   Time=0.926   Value=70820.9
+   Name="th 0.002"   Time=0.928   Value=71179.82
+   Name="th 0.002"   Time=0.93   Value=71538.74
+   Name="th 0.002"   Time=0.932   Value=71897.66
+   Name="th 0.002"   Time=0.934   Value=72256.58
+   Name="th 0.002"   Time=0.936   Value=72615.5
+   Name="th 0.002"   Time=0.938   Value=72974.41
+   Name="th 0.002"   Time=0.94   Value=73333.33
+   Name="th 0.002"   Time=0.942   Value=72974.41
+   Name="th 0.002"   Time=0.944   Value=72615.5
+   Name="th 0.002"   Time=0.946   Value=72256.58
+   Name="th 0.002"   Time=0.948   Value=71897.66
+   Name="th 0.002"   Time=0.95   Value=71538.74
+   Name="th 0.002"   Time=0.952   Value=71179.82
+   Name="th 0.002"   Time=0.954   Value=70820.9
+   Name="th 0.002"   Time=0.956   Value=70461.98
+   Name="th 0.002"   Time=0.958   Value=70103.06
+   Name="th 0.002"   Time=0.96   Value=69744.14
+   Name="th 0.002"   Time=0.962   Value=68702.52
+   Name="th 0.002"   Time=0.964   Value=67660.9
+   Name="th 0.002"   Time=0.966   Value=66619.28
+   Name="th 0.002"   Time=0.968   Value=65577.65
+   Name="th 0.002"   Time=0.97   Value=64536.03
+   Name="th 0.002"   Time=0.972   Value=63494.41
+   Name="th 0.002"   Time=0.974   Value=62452.78
+   Name="th 0.002"   Time=0.976   Value=61411.16
+   Name="th 0.002"   Time=0.978   Value=60369.54
+   Name="th 0.002"   Time=0.98   Value=59327.91
+   Name="th 0.002"   Time=0.982   Value=57705.55
+   Name="th 0.002"   Time=0.984   Value=56083.18
+   Name="th 0.002"   Time=0.986   Value=54460.81
+   Name="th 0.002"   Time=0.988   Value=52838.45
+   Name="th 0.002"   Time=0.99   Value=51216.08
+   Name="th 0.002"   Time=0.992   Value=49593.72
+   Name="th 0.002"   Time=0.994   Value=47971.35
+   Name="th 0.002"   Time=0.996   Value=46348.98
+   Name="th 0.002"   Time=0.998   Value=44726.62
+   Name="th 0.002"   Time=1   Value=43104.25
+ 
+TABLE:  "GRID LINES"
+   CoordSys=GLOBAL   AxisDir=X   GridID=A   XRYZCoord=0   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End   AllVisible=Yes   BubbleSize=0.375
+   CoordSys=GLOBAL   AxisDir=X   GridID=B   XRYZCoord=2   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End
+   CoordSys=GLOBAL   AxisDir=X   GridID=C   XRYZCoord=3   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End
+   CoordSys=GLOBAL   AxisDir=Y   GridID=1   XRYZCoord=0   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=Start
+   CoordSys=GLOBAL   AxisDir=Z   GridID=Z1   XRYZCoord=0   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End
+   CoordSys=GLOBAL   AxisDir=Z   GridID=Z2   XRYZCoord=3   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End
+ 
+TABLE:  "GROUPS 1 - DEFINITIONS"
+   GroupName=ALL   Selection=Yes   SectionCut=Yes   Steel=Yes   Concrete=Yes   Aluminum=Yes   ColdFormed=Yes   Stage=Yes   Bridge=Yes   AutoSeismic=No   AutoWind=No   SelDesSteel=No   SelDesAlum=No   SelDesCold=No   MassWeight=Yes   Color=Red
+ 
+TABLE:  "HINGES DEF 06 - INTERACTING - DEFORM CONTROL - GENERAL"
+   HingeName=Hinge-PM   DOFType="Interacting P-M3"   FDType=Moment-Rot   LengthType=Absolute   SSAbsLen=1   SFType=Yield   BeyondE=Extrapolated   PMSym=Yes
+ 
+TABLE:  "HINGES DEF 07 - INTERACTING - DEFORM CONTROL - FS AND ANGS"
+   HingeName=Hinge-PM   AxForce=0   Angle=90
+ 
+TABLE:  "HINGES DEF 08 - INTERACTING - DEFORM CONTROL - FORCE-DEFORM"
+   HingeName=Hinge-PM   AxForce=0   Angle=90   FDPoint=A   MomRatio=0   RCRatio=0
+   HingeName=Hinge-PM   AxForce=0   Angle=90   FDPoint=B   MomRatio=1   RCRatio=0
+   HingeName=Hinge-PM   AxForce=0   Angle=90   FDPoint=C   MomRatio=1   RCRatio=6
+   HingeName=Hinge-PM   AxForce=0   Angle=90   FDPoint=D   MomRatio=1   RCRatio=6
+   HingeName=Hinge-PM   AxForce=0   Angle=90   FDPoint=E   MomRatio=1   RCRatio=8
+ 
+TABLE:  "HINGES DEF 09 - INTERACTING - DEFORM CONTROL - ACCEPTANCE"
+   HingeName=Hinge-PM   AxForce=0   Angle=90   ACPoint=IO   AC=2
+   HingeName=Hinge-PM   AxForce=0   Angle=90   ACPoint=LS   AC=4
+   HingeName=Hinge-PM   AxForce=0   Angle=90   ACPoint=CP   AC=6
+ 
+TABLE:  "HINGES DEF 11 - INTERACTING - INTERACTION SURFACE - GENERAL"
+   HingeName=Hinge-PM   DOFType="Interacting P-M3"   IntType=User   PCurve=Elastic-Plastic   SymPM=Yes   NumCurves=1   NumPoints=5   ScaleP=400000   ScaleM3=96000
+ 
+TABLE:  "HINGES DEF 12 - INTERACTING - INTERACTION SURFACE - DATA"
+   HingeName=Hinge-PM   DOFType="Interacting P-M3"   CurveNum=1   PointNum=1   P=-1   M3=0
+   HingeName=Hinge-PM   DOFType="Interacting P-M3"   CurveNum=1   PointNum=2   P=-0.15   M3=1
+   HingeName=Hinge-PM   DOFType="Interacting P-M3"   CurveNum=1   PointNum=3   P=0   M3=1
+   HingeName=Hinge-PM   DOFType="Interacting P-M3"   CurveNum=1   PointNum=4   P=0.15   M3=1
+   HingeName=Hinge-PM   DOFType="Interacting P-M3"   CurveNum=1   PointNum=5   P=1   M3=0
+ 
+TABLE:  "JOINT COORDINATES"
+   Joint=0   CoordSys=GLOBAL   CoordType=Cartesian   XorR=0   Y=0   Z=0   SpecialJt=No   GUID=52c2b6ca-a2fd-4eb1-9c55-e518dbedad3c
+   Joint=1   CoordSys=GLOBAL   CoordType=Cartesian   XorR=0   Y=0   Z=3   SpecialJt=No   GUID=15aa0796-d4c3-4d8c-8049-659b2634185d
+   Joint=2   CoordSys=GLOBAL   CoordType=Cartesian   XorR=2   Y=0   Z=3   SpecialJt=No   GUID=f4804b03-3b8e-4732-a926-8aaea0dfca5c
+   Joint=3   CoordSys=GLOBAL   CoordType=Cartesian   XorR=3   Y=0   Z=3   SpecialJt=No   GUID=84d803cf-6f63-40ec-bf2f-d761459c33bf
+   Joint=4   CoordSys=GLOBAL   CoordType=Cartesian   XorR=3   Y=0   Z=0   SpecialJt=No   GUID=0416dc64-45e4-45be-ad0d-8f62a9ee0872
+ 
+TABLE:  "JOINT LOADS - FORCE"
+   Joint=1   LoadPat=Point   CoordSys=GLOBAL   F1=1   F2=0   F3=0   M1=0   M2=0   M3=0   GUID=affed4ee-6aba-4fc5-95a8-26bac136b2f3
+   Joint=2   LoadPat=Point   CoordSys=GLOBAL   F1=0   F2=0   F3=-1.625   M1=0   M2=0   M3=0   GUID=1431b588-e695-4a65-862b-dc87d85097f6
+ 
+TABLE:  "JOINT PATTERN DEFINITIONS"
+   Pattern=Default
+ 
+TABLE:  "JOINT RESTRAINT ASSIGNMENTS"
+   Joint=0   U1=Yes   U2=Yes   U3=Yes   R1=Yes   R2=Yes   R3=Yes
+   Joint=4   U1=Yes   U2=Yes   U3=Yes   R1=Yes   R2=Yes   R3=Yes
+ 
+TABLE:  "LOAD CASE DEFINITIONS"
+   Case=DEAD   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct=Non-Composite   AutoType=None   RunCase=No   GUID=2cb4e9f3-865b-4c8b-8585-89d952b8186b
+   Case=MODAL   Type=LinModal   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=No   GUID=8fed9159-e140-45ca-943f-d8badba9afe7
+   Case=Point   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=No   GUID=52def078-743a-4cfc-9e15-8c01146f4a8c
+   Case=Linear-modal-0.02   Type=LinModHist   InitialCond=Zero   ModalCase=MODAL   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=d7d07cad-3e23-442f-8287-1b050b286634
+   Case=Linear-modal-0.002   Type=LinModHist   InitialCond=Zero   ModalCase=MODAL   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=d7d07cad-3e23-442f-8287-1b050b286634
+   Case=Linear-direct-0.02   Type=LinDirHist   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=d7d07cad-3e23-442f-8287-1b050b286634
+   Case=Linear-direct-0.002   Type=LinDirHist   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=d7d07cad-3e23-442f-8287-1b050b286634
+   Case="Nonlinear - 0.02"   Type=NonDirHist   InitialCond=Zero   MassSource=MSSSRC1   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=d7d07cad-3e23-442f-8287-1b050b286634
+   Case="Nonlinear - 0.002"   Type=NonDirHist   InitialCond=Zero   MassSource=MSSSRC1   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=Yes   GUID=d7d07cad-3e23-442f-8287-1b050b286634
+ 
+TABLE:  "LOAD PATTERN DEFINITIONS"
+   LoadPat=DEAD   DesignType=Dead   SelfWtMult=1   GUID=f4be6fc5-5eca-4c9c-bb43-ee3258606e3a
+   LoadPat=Point   DesignType=Other   SelfWtMult=0   GUID=cadba67e-7e7f-43f4-98d8-3e00923ba25d   Notes="Added 2023-01-07 8:02:04 PM"
+ 
+TABLE:  "MASS SOURCE"
+   MassSource=MSSSRC1   Elements=Yes   Masses=Yes   Loads=Yes   IsDefault=Yes   LoadPat=DEAD   Multiplier=1
+ 
+TABLE:  "MATERIAL PROPERTIES 01 - GENERAL"
+   Material=4000Psi   Type=Concrete   Grade="f'c 4000 psi"   SymType=Isotropic   TempDepend=No   Color=Red   GUID=5b385862-8fb9-4878-854f-d67a2ec7debd   Notes="Customary f'c 4000 psi 2023-02-09 11:54:50 AM"
+   Material=A416Gr270   Type=Tendon   Grade="Grade 270"   SymType=Uniaxial   TempDepend=No   Color=Magenta   GUID=84cdc6a9-29f3-4687-95f1-178ccbd8240b   Notes="ASTM A416 Grade 270 2023-02-09 11:54:50 AM"
+   Material=A615Gr60   Type=Rebar   Grade="Grade 60"   SymType=Uniaxial   TempDepend=No   Color=Gray8Dark   GUID=fe89f6a9-7293-40ad-b2bf-c12a72a762ff   Notes="ASTM A615 Grade 60 2023-02-09 11:54:50 AM"
+   Material=A992Fy50   Type=Steel   Grade="Grade 50"   SymType=Isotropic   TempDepend=No   Color=Magenta   Notes="ASTM A992 Grade 50 2023-01-07 7:57:55 PM"
+   Material=Steel   Type=Steel   Grade="Grade 50"   SymType=Isotropic   TempDepend=No   Color=Cyan   GUID=f87a762c-4c95-4bf7-902b-fcb3e0a8014a   Notes="Steel added 2023-01-07 7:59:51 PM"
+ 
+TABLE:  "MATERIAL PROPERTIES 02 - BASIC MECHANICAL PROPERTIES"
+   Material=4000Psi   UnitWeight=23563.1216161854   UnitMass=2402.76960558926   E1=24855578060.0518   G12=10356490858.3549   U12=0.2   A1=9.89999952793124E-06
+   Material=A416Gr270   UnitWeight=76972.8639422648   UnitMass=7849.04737995992   E1=196500599851.2   A1=1.16999994421006E-05
+   Material=A615Gr60   UnitWeight=76972.8639422648   UnitMass=7849.04737995992   E1=199947978795.958   A1=1.16999994421006E-05
+   Material=A992Fy50   UnitWeight=76972.8639422648   UnitMass=7849.04737995992   E1=199947978795.958   G12=76903068767.676   U12=0.3   A1=1.16999994421006E-05
+   Material=Steel   UnitWeight=0   UnitMass=0   E1=200000000000   G12=76923076923.0769   U12=0.3   A1=1.16999994421006E-05
+ 
+TABLE:  "MATERIAL PROPERTIES 03A - STEEL DATA"
+   Material=A992Fy50   Fy=344737894.475789   Fu=448159262.818526   EffFy=379211683.923368   EffFu=492975189.100378   SSCurveOpt=Simple   SSHysType=Kinematic   SHard=0.015   SMax=0.11   SRup=0.17   FinalSlope=-0.1   CoupModType="Von Mises"
+   Material=Steel   Fy=240000000   Fu=370000000   EffFy=379211683.923368   EffFu=492975189.100378   SSCurveOpt=Simple   SSHysType=Kinematic   SHard=0.015   SMax=0.11   SRup=0.17   FinalSlope=-0.1   CoupModType="Von Mises"
+ 
+TABLE:  "MATERIAL PROPERTIES 03B - CONCRETE DATA"
+   Material=4000Psi   Fc=27579031.5580631   eFc=27579031.5580631   LtWtConc=No   SSCurveOpt=Mander   SSHysType=Takeda   SFc=0.00221914   SCap=0.005   FinalSlope=-0.1   FAngle=0   DAngle=0   CoupModType="Modified Darwin-Pecknold"
+ 
+TABLE:  "MATERIAL PROPERTIES 03E - REBAR DATA"
+   Material=A615Gr60   Fy=413685473.370947   Fu=620528210.05642   EffFy=455054020.708041   EffFu=682581031.062062   SSCurveOpt=Simple   SSHysType=Kinematic   SHard=0.01   SCap=0.09   FinalSlope=-0.1   UseCTDef=No   CoupModType="Von Mises"
+ 
+TABLE:  "MATERIAL PROPERTIES 03F - TENDON DATA"
+   Material=A416Gr270   Fy=1689905158.72032   Fu=1861584630.16926   SSCurveOpt="270 ksi"   SSHysType=Kinematic   FinalSlope=-0.1   CoupModType="Von Mises"
+ 
+TABLE:  "MATERIAL PROPERTIES 03J - COUPLED NONLINEAR VON MISES DATA"
+   Material=A416Gr270   YieldStress=1689905158.72032   LinIsoHard=No   LinKinHard=No   NLIsoSaHard=No
+   Material=A615Gr60   YieldStress=455054020.708041   LinIsoHard=No   LinKinHard=No   NLIsoSaHard=No
+   Material=A992Fy50   YieldStress=379211683.923368   LinIsoHard=No   LinKinHard=No   NLIsoSaHard=No
+   Material=Steel   YieldStress=379211683.923368   LinIsoHard=No   LinKinHard=No   NLIsoSaHard=No
+ 
+TABLE:  "MATERIAL PROPERTIES 06 - DAMPING PARAMETERS"
+   Material=4000Psi   ModalRatio=0   VisMass=0   VisStiff=0   HysMass=0   HysStiff=0
+   Material=A416Gr270   ModalRatio=0   VisMass=0   VisStiff=0   HysMass=0   HysStiff=0
+   Material=A615Gr60   ModalRatio=0   VisMass=0   VisStiff=0   HysMass=0   HysStiff=0
+   Material=A992Fy50   ModalRatio=0   VisMass=0   VisStiff=0   HysMass=0   HysStiff=0
+   Material=Steel   ModalRatio=0   VisMass=0   VisStiff=0   HysMass=0   HysStiff=0
+ 
+TABLE:  "MATERIAL PROPERTIES 09 - ACCEPTANCE CRITERIA"
+   Material=4000Psi   IOTens=0.01   LSTens=0.02   CPTens=0.05   IOComp=-0.003   LSComp=-0.006   CPComp=-0.015   IgnoreTens=Yes
+   Material=A416Gr270   IOTens=0.015   LSTens=0.023   CPTens=0.03   IOComp=-0.015   LSComp=-0.023   CPComp=-0.03
+   Material=A615Gr60   IOTens=0.01   LSTens=0.02   CPTens=0.05   IOComp=-0.005   LSComp=-0.01   CPComp=-0.02
+   Material=A992Fy50   IOTens=0.01   LSTens=0.02   CPTens=0.05   IOComp=-0.005   LSComp=-0.01   CPComp=-0.02
+   Material=Steel   IOTens=0.01   LSTens=0.02   CPTens=0.05   IOComp=-0.005   LSComp=-0.01   CPComp=-0.02
+ 
+TABLE:  "OPTIONS - COLORS - DISPLAY"
+   DeviceType=Screen   Points=Blue   LinesFrame=Blue   LinesFrmDL=Blue   LinesCable=Green   LinesTendon=Green   SpringLinks=Green   Restraints=Green   Releases=Green   Axes=Cyan   Text=Black   ShadowLines=Gray8Dark   GuideLines=Gray8Dark _
+        Highlight=Red   Selection=10504778   AreaFillBot=Red   AreaFillTop=16744703   AreaFillSd=Red   AreaEdge=DarkRed   SolidF1=Red   SolidF2=Blue   SolidF3=Green   SolidF4=Yellow   SolidF5=White   SolidF6=Cyan   SolidEdge=DarkRed _
+        Floor=Gray4   Background=White   BGLowLeft=White   BGLowRight=White   BGUpRight=White   Darkness=0.5
+   DeviceType=Printer   Points=Gray8Dark   LinesFrame=Black   LinesFrmDL=Gray4   LinesCable=Black   LinesTendon=Black   SpringLinks=Gray8Dark   Restraints=Gray8Dark   Releases=Gray4   Axes=Black   Text=Black   ShadowLines=Gray4 _
+        GuideLines=Gray4   Highlight=Black   Selection=Black   AreaFillBot=Gray4   AreaFillTop=Gray8Dark   AreaFillSd=Gray4   AreaEdge=Black   SolidF1=Gray1Light   SolidF2=Gray2   SolidF3=Gray3   SolidF4=Gray4   SolidF5=Gray5 _
+        SolidF6=Gray6   SolidEdge=Black   Floor=Gray4   Background=White   BGLowLeft=White   BGLowRight=White   BGUpRight=White   Darkness=0.5
+   DeviceType="Color Printer"   Points=Blue   LinesFrame=Blue   LinesFrmDL=Blue   LinesCable=Green   LinesTendon=Green   SpringLinks=Green   Restraints=Green   Releases=Green   Axes=Cyan   Text=Black   ShadowLines=Gray8Dark _
+        GuideLines=Gray8Dark   Highlight=Red   Selection=10504778   AreaFillBot=Red   AreaFillTop=16744703   AreaFillSd=Red   AreaEdge=DarkRed   SolidF1=Red   SolidF2=Blue   SolidF3=Green   SolidF4=Yellow   SolidF5=White   SolidF6=Cyan _
+        SolidEdge=DarkRed   Floor=Gray4   Background=White   BGLowLeft=White   BGLowRight=White   BGUpRight=White   Darkness=0.5
+ 
+TABLE:  "OPTIONS - COLORS - OUTPUT"
+   DeviceType=Screen   Contour1=13107400   Contour2=6553828   Contour3=Red   Contour4=16639   Contour5=Orange   Contour6=43775   Contour7=54527   Contour8=Yellow   Contour9=65408   Contour10=Green   Contour11=8453888   Contour12=Cyan _
+        Contour13=16755200   Contour14=16733440   Contour15=Blue   Transpare=0   Ratio1=Cyan   Ratio2=Green   Ratio3=Yellow   Ratio4=Orange   Ratio5=Red   RatioNotD=Gray4   RatioNotC=Red   RatioVal1=0.5   RatioVal2=0.7   RatioVal3=0.9 _
+        RatioVal4=1   DFillPos=Blue   DFillNeg=Red   DFillRPos=Green   DFillRNeg=Green
+   DeviceType=Printer   Contour1=Black   Contour2=3158064   Contour3=4210752   Contour4=5263440   Contour5=6316128   Contour6=7368816   Contour7=Gray8Dark   Contour8=Gray7   Contour9=Gray6   Contour10=Gray5   Contour11=Gray4 _
+        Contour12=Gray3   Contour13=Gray2   Contour14=Gray1Light   Contour15=White   Transpare=0   Ratio1=Gray2   Ratio2=Gray4   Ratio3=Gray8Dark   Ratio4=4210752   Ratio5=Black   RatioNotD=Gray4   RatioNotC=Black   RatioVal1=0.5 _
+        RatioVal2=0.7   RatioVal3=0.9   RatioVal4=1   DFillPos=Gray8Dark   DFillNeg=Gray8Dark   DFillRPos=4210752   DFillRNeg=4210752
+   DeviceType="Color Printer"   Contour1=13107400   Contour2=6553828   Contour3=Red   Contour4=16639   Contour5=Orange   Contour6=43775   Contour7=54527   Contour8=Yellow   Contour9=65408   Contour10=Green   Contour11=8453888 _
+        Contour12=Cyan   Contour13=16755200   Contour14=16733440   Contour15=Blue   Transpare=0   Ratio1=Cyan   Ratio2=Green   Ratio3=Yellow   Ratio4=Orange   Ratio5=Red   RatioNotD=Gray4   RatioNotC=Red   RatioVal1=0.5   RatioVal2=0.7 _
+        RatioVal3=0.9   RatioVal4=1   DFillPos=Blue   DFillNeg=Red   DFillRPos=Green   DFillRNeg=Green
+ 
+TABLE:  "OVERWRITES - STEEL DESIGN - AISC 360-16"
+   Frame=0   DesignSect="Program Determined"   FrameType="Program Determined"   Fy=0   RLLF=0   AreaRatio=0   XLMajor=0   XLMinor=0   XLLTB=0   K1Major=0   K1Minor=0   K2Major=0   K2Minor=0   KLTB=0   CmMajor=0   CmMinor=0   Cb=0 _
+        B1Major=0   B1Minor=0   B2Major=0   B2Minor=0   HSSReduceT="Program Determined"   HSSWelding="Program Determined"   Omega0=0   Ry=0   Pnc=0   Pnt=0   Mn3=0   Mn2=0   Vn2=0   Vn3=0   CheckDefl="Program Determined" _
+        DeflType="Program Determined"   DLRat=0   SDLAndLLRat=0   LLRat=0   TotalRat=0   NetRat=0   DLAbs=0   SDLAndLLAbs=0   LLAbs=0   TotalAbs=0   NetAbs=0   SpecCamber=0   DCLimit=0
+   Frame=1   DesignSect="Program Determined"   FrameType="Program Determined"   Fy=0   RLLF=0   AreaRatio=0   XLMajor=0   XLMinor=0   XLLTB=0   K1Major=0   K1Minor=0   K2Major=0   K2Minor=0   KLTB=0   CmMajor=0   CmMinor=0   Cb=0 _
+        B1Major=0   B1Minor=0   B2Major=0   B2Minor=0   HSSReduceT="Program Determined"   HSSWelding="Program Determined"   Omega0=0   Ry=0   Pnc=0   Pnt=0   Mn3=0   Mn2=0   Vn2=0   Vn3=0   CheckDefl="Program Determined" _
+        DeflType="Program Determined"   DLRat=0   SDLAndLLRat=0   LLRat=0   TotalRat=0   NetRat=0   DLAbs=0   SDLAndLLAbs=0   LLAbs=0   TotalAbs=0   NetAbs=0   SpecCamber=0   DCLimit=0
+   Frame=2   DesignSect="Program Determined"   FrameType="Program Determined"   Fy=0   RLLF=0   AreaRatio=0   XLMajor=0   XLMinor=0   XLLTB=0   K1Major=0   K1Minor=0   K2Major=0   K2Minor=0   KLTB=0   CmMajor=0   CmMinor=0   Cb=0 _
+        B1Major=0   B1Minor=0   B2Major=0   B2Minor=0   HSSReduceT="Program Determined"   HSSWelding="Program Determined"   Omega0=0   Ry=0   Pnc=0   Pnt=0   Mn3=0   Mn2=0   Vn2=0   Vn3=0   CheckDefl="Program Determined" _
+        DeflType="Program Determined"   DLRat=0   SDLAndLLRat=0   LLRat=0   TotalRat=0   NetRat=0   DLAbs=0   SDLAndLLAbs=0   LLAbs=0   TotalAbs=0   NetAbs=0   SpecCamber=0   DCLimit=0
+   Frame=3   DesignSect="Program Determined"   FrameType="Program Determined"   Fy=0   RLLF=0   AreaRatio=0   XLMajor=0   XLMinor=0   XLLTB=0   K1Major=0   K1Minor=0   K2Major=0   K2Minor=0   KLTB=0   CmMajor=0   CmMinor=0   Cb=0 _
+        B1Major=0   B1Minor=0   B2Major=0   B2Minor=0   HSSReduceT="Program Determined"   HSSWelding="Program Determined"   Omega0=0   Ry=0   Pnc=0   Pnt=0   Mn3=0   Mn2=0   Vn2=0   Vn3=0   CheckDefl="Program Determined" _
+        DeflType="Program Determined"   DLRat=0   SDLAndLLRat=0   LLRat=0   TotalRat=0   NetRat=0   DLAbs=0   SDLAndLLAbs=0   LLAbs=0   TotalAbs=0   NetAbs=0   SpecCamber=0   DCLimit=0
+ 
+TABLE:  "PREFERENCES - ALUMINUM DESIGN - AA 2015"
+   THDesign=Envelopes   SRatioLimit=1   Provision=LRFD   LatFact=1.33333333333333   UseLatFact=No   Bridge=No   PhiTy=0.9   PhiTr=0.75   PhiC=0.9   PhiBo=0.9   PhiBr=0.75   PhiVo=0.9   PhiVr=0.75
+ 
+TABLE:  "PREFERENCES - COLD FORMED DESIGN - AISI-16"
+   THDesign=Envelopes   FrameType="Braced Frame"   SRatioLimit=1   SOMethod="General 2nd Order"   Provision=LRFD   LatFact=1.33333333333333   UseLatFact=No   PhiTy=0.9   PhiTr=0.75   PhiC=0.85   PhiB=0.9   PhiBPipe=0.95   PhiV=0.95
+ 
+TABLE:  "PREFERENCES - CONCRETE DESIGN - ACI 318-19"
+   THDesign=Envelopes   NumCurves=24   NumPoints=11   MinEccen=Yes   BCCDesign=Yes   IgnoreBPu=Yes   CTorsion=Yes   PatLLF=0.75   UFLimit=0.95   SeisCat=D   Rho=1   Sds=0.5   PhiT=0.9   PhiCTied=0.65   PhiCSpiral=0.75   PhiV=0.75 _
+        PhiVSeismic=0.6   PhiVJoint=0.85   TanTheta=1
+ 
+TABLE:  "PREFERENCES - CONCRETE SHELL DESIGN - EUROCODE 2-2004"
+   Country="CEN Default"   GammaS=1.15   GammaC=1.5   AlphaCC=1   AlphaCT=1   CrackCond="Program Determined"   ShrDesMet="Method 1"   CotTheta=1
+ 
+TABLE:  "PREFERENCES - DIMENSIONAL"
+   MergeTol=0.001   FineGrid=0.25   Nudge=0.25   SelectTol=3   SnapTol=12   SLineThick=2   PLineThick=4   MaxFont=8   MinFont=3   AutoZoom=10   ShrinkFact=70   TextFileLen=240
+ 
+TABLE:  "PREFERENCES - STEEL DESIGN - AISC 360-16"
+   THDesign=Envelopes   FrameType=SMF   PatLLF=0.75   SRatioLimit=0.95   MaxIter=1   SDC=D   SeisCode=No   SeisLoad=No   ImpFactor=1   SystemRho=1   SystemSds=0.5   SystemR=8   SystemCd=5.5   Omega0=3   Provision=LRFD _
+        AMethod="Direct Analysis"   SOMethod="General 2nd Order"   SRMethod="Tau-b Fixed"   NLCoeff=0.002   PhiB=0.9   PhiC=0.9   PhiTY=0.9   PhiTF=0.75   PhiV=0.9   PhiVRolledI=1   PhiVT=0.9   PlugWeld=Yes   HSSWelding=ERW   HSSReduceT=No _
+        CheckDefl=No   DLRat=120   SDLAndLLRat=120   LLRat=360   TotalRat=240   NetRat=240
+ 
+TABLE:  "PROGRAM CONTROL"
+   ProgramName=SAP2000   Version=24.2.0   CurrUnits="N, m, C"   SteelCode="AISC 360-16"   ConcCode="ACI 318-19"   AlumCode="AA 2015"   ColdCode=AISI-16   RegenHinge=Yes
+ 
+TABLE:  "PROJECT INFORMATION"
+   Item="Company Name"
+   Item="Client Name"
+   Item="Project Name"
+   Item="Project Number"
+   Item="Model Name"
+   Item="Model Description"
+   Item="Revision Number"
+   Item="Frame Type"
+   Item=Engineer
+   Item=Checker
+   Item=Supervisor
+   Item="Issue Code"
+   Item="Design Code"
+ 
+TABLE:  "REBAR SIZES"
+   RebarID=#2   Area=3.2258E-05   Diameter=0.00635
+   RebarID=#3   Area=7.09675996154547E-05   Diameter=0.009525
+   RebarID=#4   Area=0.000129032001922727   Diameter=0.0127
+   RebarID=#5   Area=0.000199999601538181   Diameter=0.015875
+   RebarID=#6   Area=0.000283870398461819   Diameter=0.01905
+   RebarID=#7   Area=0.000387096015381813   Diameter=0.022225
+   RebarID=#8   Area=0.000509676413843632   Diameter=0.0254
+   RebarID=#9   Area=0.00064516   Diameter=0.0286512005329132
+   RebarID=#10   Area=0.00081935318769455   Diameter=0.0322579995155334
+   RebarID=#11   Area=0.00100644956308365   Diameter=0.0358139991521835
+   RebarID=#14   Area=0.00145161   Diameter=0.0430021989583969
+   RebarID=#18   Area=0.00258064   Diameter=0.0573277992248535
+   RebarID=10M   Area=0.000100000002655387   Diameter=0.011300000667572
+   RebarID=15M   Area=0.000200000005310774   Diameter=0.0159999999403954
+   RebarID=20M   Area=0.000300000017579794   Diameter=0.0194999997854233
+   RebarID=25M   Area=0.000500000022890568   Diameter=0.0252000016093254
+   RebarID=30M   Area=0.000700000008974075   Diameter=0.0299000008821487
+   RebarID=35M   Area=0.00100000004578114   Diameter=0.0357000011444092
+   RebarID=45M   Area=0.00150000010712624   Diameter=0.0437000003576279
+   RebarID=55M   Area=0.00250000007599831   Diameter=0.0564000033855438
+   RebarID=6d   Area=2.83000004149973E-05   Diameter=0.006000000166893
+   RebarID=8d   Area=5.02999995571375E-05   Diameter=0.00799999997019768
+   RebarID=10d   Area=7.85000013634562E-05   Diameter=0.00999999977350235
+   RebarID=12d   Area=0.000113000009249449   Diameter=0.012000000333786
+   RebarID=14d   Area=0.000154000010818839   Diameter=0.0140000008940697
+   RebarID=16d   Area=0.000201000015431643   Diameter=0.0159999999403954
+   RebarID=20d   Area=0.000314000005453825   Diameter=0.0199999995470047
+   RebarID=25d   Area=0.000491000008711815   Diameter=0.0250000001907349
+   RebarID=26d   Area=0.000531000029001236   Diameter=0.0259999997138977
+   RebarID=28d   Area=0.000616000043275356   Diameter=0.0280000017881393
+   RebarID=N12   Area=0.000113000009249449   Diameter=0.012000000333786
+   RebarID=N16   Area=0.000201000015431643   Diameter=0.0159999999403954
+   RebarID=N20   Area=0.000314000005453825   Diameter=0.0199999995470047
+   RebarID=N24   Area=0.000452000036997795   Diameter=0.024000000667572
+   RebarID=N28   Area=0.000616000043275356   Diameter=0.0280000017881393
+   RebarID=N32   Area=0.00080400006172657   Diameter=0.0319999998807907
+   RebarID=N36   Area=0.00102000001747131   Diameter=0.036000001001358
+ 
+TABLE:  "SOLID PROPERTY DEFINITIONS"
+   SolidProp=Solid1   Material=4000Psi   MatAngleA=0   MatAngleB=0   MatAngleC=0   InComp=Yes   Color=Yellow
+ 
+END TABLE DATA
