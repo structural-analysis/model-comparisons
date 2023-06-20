@@ -13,7 +13,7 @@ TABLE:  "CASE - DIRECT HISTORY 1 - GENERAL"
    Case=nonlinear-0.002   OutSteps=500   StepSize=0.002
  
 TABLE:  "CASE - DIRECT HISTORY 2 - LOAD ASSIGNMENTS"
-   Case=nonlinear-0.002   LoadType="Load pattern"   LoadName=point   Function=th-0.002   LoadSF=1   TimeFactor=1   ArrivalTime=0
+   Case=nonlinear-0.002   LoadType="Load pattern"   LoadName=point   Function=th-0.002   LoadSF=0.4   TimeFactor=1   ArrivalTime=0
  
 TABLE:  "CASE - DIRECT HISTORY 4 - INTEGRATION PARAMETERS"
    Case=nonlinear-0.002   IntMethod=HilberHughesTaylor   Gamma=0.5   Beta=0.25   Alpha=0
@@ -177,7 +177,9 @@ TABLE:  "FRAME SECTION PROPERTIES 13 - TIME DEPENDENT"
    SectionName=rect   TypeSize=Auto   AutoSFSize=1
  
 TABLE:  "FUNCTION - PLOT FUNCTIONS"
-   PlotFunc="Input Energy"   Type=Energy   Component=Input   Mode=All
+   PlotFunc=disp-10-x   Type=Joint   ObjectLabel=10   Component=RelDispU1   Mode=All
+   PlotFunc=moment-2-0   Type=Frame   ObjectLabel=2   DistType=RelDist   RelDist=0   AbsDist=0   Component=M3   Mode=All
+   PlotFunc=moment-2-1   Type=Frame   ObjectLabel=2   DistType=RelDist   RelDist=1   AbsDist=3   Component=M3   Mode=All
  
 TABLE:  "FUNCTION - POWER SPECTRAL DENSITY - USER"
    Name=UNIFPSD   Frequency=0   Value=1
