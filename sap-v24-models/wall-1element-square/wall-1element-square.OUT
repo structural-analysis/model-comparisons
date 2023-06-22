@@ -1,0 +1,18 @@
+
+
+ SAP2000 v24.2.0 Ultimate 64-bit (Analysis Build 9931/64)                       
+ File: C:\Users\Hamed\projects...s\wall-1element-square\wall-1element-square.OUT
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+       1 TO       2    A       A            
+       3 TO       4    -   -   -   -   -   -
