@@ -1,0 +1,188 @@
+
+
+ SAP2000 v24.1.0 Ultimate 64-bit (Analysis Build 9917/64)
+ File: H:\Doctora\Thesis\model...de-dynamic-elastic\3d-2side-dynamic-elastic.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2023/07/08  18:30:28
+
+
+ RUNNING ANALYSIS WITHIN THE GUI PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =           8
+    WITH RESTRAINTS                        =           3
+ NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =           7
+ NUMBER OF LOAD PATTERNS                   =           2
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =           2
+ NUMBER OF MASS SOURCES                    =           1
+
+ UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, m, °C, sec
+ GRAVITATIONAL ACCELERATION                =    9.806650
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =       3.888 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           2
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           2
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           2
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           2
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           2
+
+
+ E L E M E N T   F O R M A T I O N                                      18:30:28
+
+
+
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        18:30:28
+
+ FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =          30
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =         249
+
+ ---------------------------------
+ BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
+     SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
+
+    NUMBER OF NEGATIVE EIGENVALUES         =           0,  OK.
+ ---------------------------------
+
+
+ E I G E N   M O D A L   A N A L Y S I S                                18:30:28
+
+ CASE: MODAL
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF STIFFNESS DEGREES OF FREEDOM    =          30
+ NUMBER OF MASS DEGREES OF FREEDOM         =          15
+ MAXIMUM NUMBER OF EIGEN MODES SOUGHT      =          12
+ MINIMUM NUMBER OF EIGEN MODES SOUGHT      =           1
+ NUMBER OF RESIDUAL-MASS MODES SOUGHT      =           0
+ NUMBER OF SUBSPACE VECTORS USED           =          15
+ RELATIVE CONVERGENCE TOLERANCE            =    1.00E-09
+
+ FREQUENCY SHIFT  (CENTER) (CYC/TIME)      =     .000000
+ FREQUENCY CUTOFF (RADIUS) (CYC/TIME)      =  -INFINITY-
+ ALLOW AUTOMATIC FREQUENCY SHIFTING        =         YES
+
+
+ Original stiffness at shift : EV= 0.0000000E+00, f=     .000000, T=  -INFINITY-
+ Number of eigenvalues below shift =      0
+
+ Iteration    Approximations to next 5 eigenvalues, from shift EV= 0.0000000E+00
+       1   8.1833459E+00 1.5227338E+01 2.5057155E+01 1.9863960E+02 2.1120988E+02
+
+ Found mode      1 of     12:  EV= 8.1833459E+00, f=    0.455287, T=    2.196415
+ Found mode      2 of     12:  EV= 1.5227338E+01, f=    0.621058, T=    1.610156
+ Found mode      3 of     12:  EV= 2.5057155E+01, f=    0.796684, T=    1.255203
+ Found mode      4 of     12:  EV= 1.9863960E+02, f=    2.243123, T=    0.445807
+ Found mode      5 of     12:  EV= 2.1120988E+02, f=    2.313009, T=    0.432337
+ Found mode      6 of     12:  EV= 2.3982692E+02, f=    2.464729, T=    0.405724
+ Found mode      7 of     12:  EV= 2.9453763E+02, f=    2.731433, T=    0.366108
+ Found mode      8 of     12:  EV= 4.5080287E+03, f=   10.685958, T=    0.093581
+ Found mode      9 of     12:  EV= 8.2063070E+04, f=   45.592563, T=    0.021933
+ Found mode     10 of     12:  EV= 1.1608962E+05, f=   54.227155, T=    0.018441
+ Found mode     11 of     12:  EV= 1.6021808E+05, f=   63.705349, T=    0.015697
+ Found mode     12 of     12:  EV= 1.6093818E+05, f=   63.848350, T=    0.015662
+
+ NUMBER OF EIGEN MODES FOUND               =          12
+ NUMBER OF ITERATIONS PERFORMED            =           1
+ NUMBER OF STIFFNESS SHIFTS                =           0
+
+
+ L I N E A R   M O D A L   H I S T O R Y   A N A L Y S I S              18:30:28
+
+ CASE: ELASTIC-0.02-UNDAMPED
+ ANALYSIS TYPE                             =      LINEAR
+ USING MODES FROM CASE: MODAL
+ NUMBER OF DYNAMIC MODES TO BE USED        =          12
+ NUMBER OF STATIC-LOAD MODES TO BE USED    =           1
+ MODES ARE TREATED AS STATIC BELOW PERIOD  =    1.0E-101
+
+ TOTAL HISTORY LENGTH (TIME)               =    1.000000
+ LENGTH OF TIME-STEPS (TIME)               =    0.020000
+ NUMBER OF TIME-STEPS TO BE INTEGRATED     =          50
+
+
+ EFFECTIVE MODAL DAMPING RATIOS (CROSS-COUPLING TERMS ARE NEGLECTED)
+       1    2.196415     .000000
+       2    1.610156     .000000
+       3    1.255203     .000000
+       4    0.445807     .000000
+       5    0.432337     .000000
+       6    0.405724     .000000
+       7    0.366108     .000000
+       8    0.093581     .000000
+       9    0.021933     .000000
+      10    0.018441     .000000
+      11    0.015697     .000000
+      12    0.015662     .000000
+   Time-step    Load-step     Sub-step    Iteration   Sub-steps/  Iterations/
+      number       number       number       number    load-step     sub-step
+
+           1            1            1            0            1            0
+           2            2            2            0            1            0
+           3            3            3            0            1            0
+           4            4            4            0            1            0
+           5            5            5            0            1            0
+           6            6            6            0            1            0
+           7            7            7            0            1            0
+           8            8            8            0            1            0
+           9            9            9            0            1            0
+          10           10           10            0            1            0
+          11           11           11            0            1            0
+          12           12           12            0            1            0
+          13           13           13            0            1            0
+          14           14           14            0            1            0
+          15           15           15            0            1            0
+          16           16           16            0            1            0
+          17           17           17            0            1            0
+          18           18           18            0            1            0
+          19           19           19            0            1            0
+          20           20           20            0            1            0
+          21           21           21            0            1            0
+          22           22           22            0            1            0
+          23           23           23            0            1            0
+          24           24           24            0            1            0
+          25           25           25            0            1            0
+          26           26           26            0            1            0
+          27           27           27            0            1            0
+          28           28           28            0            1            0
+          29           29           29            0            1            0
+          30           30           30            0            1            0
+          31           31           31            0            1            0
+          32           32           32            0            1            0
+          33           33           33            0            1            0
+          34           34           34            0            1            0
+          35           35           35            0            1            0
+          36           36           36            0            1            0
+          37           37           37            0            1            0
+          38           38           38            0            1            0
+          39           39           39            0            1            0
+          40           40           40            0            1            0
+          41           41           41            0            1            0
+          42           42           42            0            1            0
+          43           43           43            0            1            0
+          44           44           44            0            1            0
+          45           45           45            0            1            0
+          46           46           46            0            1            0
+          47           47           47            0            1            0
+          48           48           48            0            1            0
+          49           49           49            0            1            0
+          50           50           50            0            1            0
+
+ TOTAL NUMBER OF TIME-STEPS COMPLETED      =          50
+ TOTAL NUMBER OF LOAD-STEPS COMPLETED      =          50
+
+
+ A N A L Y S I S   C O M P L E T E                          2023/07/08  18:30:28
