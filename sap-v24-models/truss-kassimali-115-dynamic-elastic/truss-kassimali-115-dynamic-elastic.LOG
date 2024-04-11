@@ -1,0 +1,171 @@
+
+
+ SAP2000 v24.1.0 Ultimate 64-bit (Analysis Build 9917/64)
+ File: H:\Doctora\Thesis\model...elastic\truss-kassimali-115-dynamic-elastic.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2024/04/06  14:38:39
+
+
+ RUNNING ANALYSIS WITHIN THE GUI PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =           4
+    WITH RESTRAINTS                        =           3
+ NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =           5
+ NUMBER OF LOAD PATTERNS                   =           2
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =           2
+ NUMBER OF MASS SOURCES                    =           1
+
+ UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, m, °C, sec
+ GRAVITATIONAL ACCELERATION                =    9.806650
+
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =       3.888 GB
+
+ PARALLELIZATION OF ANALYSIS OPERATIONS:
+  (Env. variable SAPFIRE_NUM_THREADS not set)
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           2
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           2
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           2
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           2
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           2
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           2
+
+
+ E L E M E N T   F O R M A T I O N                                      14:38:40
+
+
+
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        14:38:40
+
+ FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =           3
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =           6
+
+ ---------------------------------
+ BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
+     SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
+
+    NUMBER OF NEGATIVE EIGENVALUES         =           0,  OK.
+ ---------------------------------
+
+
+ E I G E N   M O D A L   A N A L Y S I S                                14:38:40
+
+ CASE: MODAL
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF STIFFNESS DEGREES OF FREEDOM    =           3
+ NUMBER OF MASS DEGREES OF FREEDOM         =           3
+ MAXIMUM NUMBER OF EIGEN MODES SOUGHT      =          12
+ MINIMUM NUMBER OF EIGEN MODES SOUGHT      =           1
+ NUMBER OF RESIDUAL-MASS MODES SOUGHT      =           0
+ NUMBER OF SUBSPACE VECTORS USED           =           3
+ RELATIVE CONVERGENCE TOLERANCE            =    1.00E-09
+
+ FREQUENCY SHIFT  (CENTER) (CYC/TIME)      =     .000000
+ FREQUENCY CUTOFF (RADIUS) (CYC/TIME)      =  -INFINITY-
+ ALLOW AUTOMATIC FREQUENCY SHIFTING        =         YES
+
+ * * * I N F O * * *
+ NUMBER OF MODES SOUGHT REDUCED TO THE NUMBER OF MASS DEGREES OF FREEDOM
+
+
+
+ Original stiffness at shift : EV= 0.0000000E+00, f=     .000000, T=  -INFINITY-
+ Number of eigenvalues below shift =      0
+
+ Found mode      1 of      3:  EV= 1.3883967E+03, f=    5.930303, T=    0.168625
+ Found mode      2 of      3:  EV= 1.6090255E+03, f=    6.384128, T=    0.156638
+ Found mode      3 of      3:  EV= 2.3635532E+03, f=    7.737539, T=    0.129240
+
+ NUMBER OF EIGEN MODES FOUND               =           3
+ NUMBER OF ITERATIONS PERFORMED            =           1
+ NUMBER OF STIFFNESS SHIFTS                =           0
+
+
+ L I N E A R   M O D A L   H I S T O R Y   A N A L Y S I S              14:38:41
+
+ CASE: ELASTIC-0.02
+ ANALYSIS TYPE                             =      LINEAR
+ USING MODES FROM CASE: MODAL
+ NUMBER OF DYNAMIC MODES TO BE USED        =           3
+ NUMBER OF STATIC-LOAD MODES TO BE USED    =           1
+ MODES ARE TREATED AS STATIC BELOW PERIOD  =    1.0E-101
+
+ TOTAL HISTORY LENGTH (TIME)               =    1.000000
+ LENGTH OF TIME-STEPS (TIME)               =    0.020000
+ NUMBER OF TIME-STEPS TO BE INTEGRATED     =          50
+
+
+ EFFECTIVE MODAL DAMPING RATIOS (CROSS-COUPLING TERMS ARE NEGLECTED)
+       1    0.168625     .000000
+       2    0.156638     .000000
+       3    0.129240     .000000
+   Time-step    Load-step     Sub-step    Iteration   Sub-steps/  Iterations/
+      number       number       number       number    load-step     sub-step
+
+           1            1            1            0            1            0
+           2            2            2            0            1            0
+           3            3            3            0            1            0
+           4            4            4            0            1            0
+           5            5            5            0            1            0
+           6            6            6            0            1            0
+           7            7            7            0            1            0
+           8            8            8            0            1            0
+           9            9            9            0            1            0
+          10           10           10            0            1            0
+          11           11           11            0            1            0
+          12           12           12            0            1            0
+          13           13           13            0            1            0
+          14           14           14            0            1            0
+          15           15           15            0            1            0
+          16           16           16            0            1            0
+          17           17           17            0            1            0
+          18           18           18            0            1            0
+          19           19           19            0            1            0
+          20           20           20            0            1            0
+          21           21           21            0            1            0
+          22           22           22            0            1            0
+          23           23           23            0            1            0
+          24           24           24            0            1            0
+          25           25           25            0            1            0
+          26           26           26            0            1            0
+          27           27           27            0            1            0
+          28           28           28            0            1            0
+          29           29           29            0            1            0
+          30           30           30            0            1            0
+          31           31           31            0            1            0
+          32           32           32            0            1            0
+          33           33           33            0            1            0
+          34           34           34            0            1            0
+          35           35           35            0            1            0
+          36           36           36            0            1            0
+          37           37           37            0            1            0
+          38           38           38            0            1            0
+          39           39           39            0            1            0
+          40           40           40            0            1            0
+          41           41           41            0            1            0
+          42           42           42            0            1            0
+          43           43           43            0            1            0
+          44           44           44            0            1            0
+          45           45           45            0            1            0
+          46           46           46            0            1            0
+          47           47           47            0            1            0
+          48           48           48            0            1            0
+          49           49           49            0            1            0
+          50           50           50            0            1            0
+
+ TOTAL NUMBER OF TIME-STEPS COMPLETED      =          50
+ TOTAL NUMBER OF LOAD-STEPS COMPLETED      =          50
+
+
+ A N A L Y S I S   C O M P L E T E                          2024/04/06  14:38:41
