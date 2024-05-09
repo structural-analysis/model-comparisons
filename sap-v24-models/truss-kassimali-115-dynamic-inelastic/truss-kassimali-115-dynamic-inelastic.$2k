@@ -19,7 +19,7 @@ TABLE:  "CASE - DIRECT HISTORY 2 - LOAD ASSIGNMENTS"
  
 TABLE:  "CASE - DIRECT HISTORY 4 - INTEGRATION PARAMETERS"
    Case=inelastic-0.02   IntMethod=HilberHughesTaylor   Gamma=0.5   Beta=0.25   Alpha=0
-   Case=inelastic-0.002   IntMethod=HilberHughesTaylor   Gamma=0   Beta=0   Alpha=0
+   Case=inelastic-0.002   IntMethod=HilberHughesTaylor   Gamma=0.5   Beta=0.25   Alpha=0
  
 TABLE:  "CASE - DIRECT HISTORY 5 - NONLINEAR PARAMETERS"
    Case=inelastic-0.02   GeoNonLin=None   SolScheme="Iterative Only"   DTMax=0   DTMin=0   MaxIterCS=10   MaxIterNR=40   ItConvTol=0.0001   UseLineSrch=Yes   LSPerIter=20   LSTol=0.1   LSStepFact=1.618
